@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+i{
+    list-style: none;
+}
+.top_section{
+    background-image: url(img/fon_top.png);
+    height: 770px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+.section_inner{
+    max-width: 1140px;
+    margin:0 auto; 
+    background: blue;
+}
+.header_logo{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #fff;
+}
+.topnav{
+    float: right;
+    margin-top: 45px;
+}
+.topnav a{
+    font-size: 14px;
+    margin-left: 35px; 
+    color: #fff;
+}
+.top_welcome{
+    text-align: center;
+}
+.top_welcome h1{
+   margin-top: 265px;
+   font-size: 48px; 
+}
+.top_welcome p{
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 50px; 
+}
+.top_welcome a{
+    font-size: 16px;
+    border-radius: 0px;
+    padding: 20px 40px;
+    border: 2px solid #fff;
+}
+main{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main_section_services{
+    height: 580px;
+    /*background: blue;*/
+}
+.main_services h1{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #646464;
+}
+.main_services p{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 16px;
+    color: #646464;
+}
+.icon_services{
+    text-align: center;
+}
+.main_clean{
+    display: flex;
+    justify-content: center;
+    color: #646464;
+    text-align: center;
+}
+.clean{
+    margin-right: 70px;
+    font-size: 14px;
+}
+.clean:first-child .icon{
+    background: #c0301c;
+}
+.clean:last-child{
+    margin-right: 0;
+}
+.clean h3{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.icon{
+   width: 85px;
+   height: 85px;
+   border: 2px solid #e2e2e2;
+   border-radius: 100%;
+   display: inline-block;
+   line-height: 78px;
+}
+.icon img{
+  vertical-align: middle;  
+}
+.main_section_ubout_us{
+    text-align: center;
+    height: 850px;
+    color: #646464;
+    margin:0 auto;
+    width: 100%;
+}
+.main_ubout_us h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.main_ubout_us p{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 16px;
+}
+.main_ubout_us_2p{ /*расстояние между обзацами?*/
+    display: flex;
+    justify-content:space-between;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+.icon_ubout_us_photo{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 1140px;
+    height: 250px;
+}
+.icon_ubout_us_photo li{
+    margin-right: 25px;
+}
+.icon_ubout_us_photo li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+footer{
+    background: #c0301c;
+    height: 305px;
+    margin:0 auto;
+}
+.footer_logo{
+    padding-top: 100px;
+    text-align: center;
+
+}
+.logo_twitter{
+    position: relative;
+}
+.logo_twitter1{
+    position: absolute;
+    left: 500px;
+    bottom: 12px;
+}
+.footer_line p{
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
