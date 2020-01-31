@@ -56,8 +56,74 @@ li{
     background-image: url(img/fon_top.png);
     height: 770px;
     background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.section_inner{
+    max-width: 1140px;
+    margin:0 auto;
+    padding: 0 10px;
+}
+.header_logo{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 12px;/*24px на 16px????????*/
+    font-weight: bold;
+    color: #fff;
+}
+.topnav_button button{
+    
+}
+.menu_topnav{
+    display: flex;
+    margin-top: 40px;
+    display: none;
+}
+.topnav_button{ /*бургер меню*/
+    margin-top: 40px;
+}
+.menu_topnav li{
+    font-size: 14px;
+    margin-left: 30px;
+    color: #fff;
+}
+.top_welcome{
+    text-align: center;
+}
+.top_welcome h1{
+   margin-top: 60px;/*265px на 60px????*/
+   font-size: 24px;/*48px На 24px?????????*/
+    font-weight:normal;
+}
+.top_welcome p{
+    font-size: 12px;/*20px на 12px????*/
+    margin-top: 10px;/*35px На 10px?????*/
+    margin-bottom: 25px;/*50px на 25px???*/
+    font-family:'roboto_slab', serif;
+}
+.top_welcome a{
+    font-size: 10px;/*16px на 10px????*/
+    border-radius: 0px;
+    padding: 8px 16px;/*20px 40px на 8px 16px????*/
+    border: 1px solid #fff;
+}
+@media screen and (min-width: 768px){
+    .top_section{
+        /*background: blue;
+    }*/
+}
+@media screen and (min-width: 992px){
+.page_header{
+    display: flex;
+    justify-content:space-between;
+}
+.top_section{
+    background-image: url(img/fon_top.png);
+    height: 770px;
+    background-repeat: no-repeat;
     background-size: contain;
     color: #fff;
+    /*background: blue;*/
 }
 .section_inner{
     max-width: 1140px;
@@ -71,6 +137,9 @@ li{
     font-weight: bold;
     color: #fff;
 }
+.topnav_button button{
+    display: none;
+    }
 .menu_topnav{
     display: flex;
     margin-top: 40px;
@@ -86,6 +155,7 @@ li{
 .top_welcome h1{
    margin-top: 265px;
    font-size: 48px;
+   font-weight:normal;/*????????*/
 }
 .top_welcome p{
     font-size: 20px;
@@ -99,11 +169,8 @@ li{
     padding: 20px 40px;
     border: 2px solid #fff;
 }
-/*@media (max-width: 600px){
-    .top_section{
-        width: 50%;
-    }
-}*/
+}
+    
 
 
 
