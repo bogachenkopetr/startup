@@ -62,25 +62,22 @@ li{
 .section_inner{
     max-width: 1140px;
     margin:0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .header_logo{
-    display: inline-block;
     margin-top: 40px;
-    font-size: 12px;/*24px на 16px????????*/
-    font-weight: bold;
+    font-size: 22px;/*24px на 22px*/
+    font-weight: bold;/*???????????????????????*/
     color: #fff;
 }
-.topnav_button button{
-    
+.burger_menu{  /*бургер меню*/
+    color: #fff;
+    font-size: 22px;
+    margin-top: 40px;
+    border-radius: none;
 }
 .menu_topnav{
-    display: flex;
-    margin-top: 40px;
     display: none;
-}
-.topnav_button{ /*бургер меню*/
-    margin-top: 40px;
 }
 .menu_topnav li{
     font-size: 14px;
@@ -91,21 +88,21 @@ li{
     text-align: center;
 }
 .top_welcome h1{
-   margin-top: 60px;/*265px на 60px????*/
-   font-size: 24px;/*48px На 24px?????????*/
+   margin-top: 160px;/*265px на 160px*/
+   font-size: 38px;/*48px на 38px*/
     font-weight:normal;
 }
 .top_welcome p{
-    font-size: 12px;/*20px на 12px????*/
-    margin-top: 10px;/*35px На 10px?????*/
-    margin-bottom: 25px;/*50px на 25px???*/
+    font-size: 16px;/*20px на 16px*/
+    margin-top: 35px;
+    margin-bottom: 50px;
     font-family:'roboto_slab', serif;
 }
 .top_welcome a{
-    font-size: 10px;/*16px на 10px????*/
+    font-size: 14px;/*16px на 14px*/
     border-radius: 0px;
-    padding: 8px 16px;/*20px 40px на 8px 16px????*/
-    border: 1px solid #fff;
+    padding: 12px 28px;/*20px 40px на 12px 28px*/
+    border: 2px solid #fff;
 }
 @media screen and (min-width: 768px){
     .top_section{
@@ -125,11 +122,6 @@ li{
     color: #fff;
     /*background: blue;*/
 }
-.section_inner{
-    max-width: 1140px;
-    margin:0 auto;
-    /*background: blue;*/
-}
 .header_logo{
     display: inline-block;
     margin-top: 40px;
@@ -137,7 +129,7 @@ li{
     font-weight: bold;
     color: #fff;
 }
-.topnav_button button{
+.burger_menu{
     display: none;
     }
 .menu_topnav{
