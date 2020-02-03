@@ -10,19 +10,19 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'montserratbold';
+    font-family: 'montserrat';
     src: url('fonts/monserat/montserrat-bold-webfont.eot');
     src: url('fonts/monserat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/monserat/montserrat-bold-webfont.woff2') format('woff2'),
          url('fonts/monserat/montserrat-bold-webfont.woff') format('woff'),
          url('fonts/monserat/montserrat-bold-webfont.ttf') format('truetype'),
          url('fonts/monserat/montserrat-bold-webfont.svg#montserratbold') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'montserratregular';
+    font-family: 'montserrat';
     src: url('fonts/monserat/montserrat-regular-webfont.eot');
     src: url('fonts/monserat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/monserat/montserrat-regular-webfont.woff2') format('woff2'),
@@ -39,7 +39,7 @@
     box-sizing: border-box;
 }
 body{
-   font-family: 'Montserrat', sans-serif; 
+   font-family: 'montserrat', sans-serif; 
 }
 a{
     text-decoration: none;
@@ -62,12 +62,12 @@ li{
 .section_inner{
     max-width: 1140px;
     margin:0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 .header_logo{
     margin-top: 40px;
     font-size: 22px;/*24px на 22px*/
-    font-weight: bold;/*???????????????????????*/
+    font-weight: bold;
     color: #fff;
 }
 .burger_menu{  /*бургер меню*/
@@ -75,60 +75,57 @@ li{
     font-size: 22px;
     margin-top: 40px;
     border-radius: none;
+    background: none;
+    border: 0;
 }
 .menu_topnav{
     display: none;
-}
-.menu_topnav li{
-    font-size: 14px;
-    margin-left: 30px;
-    color: #fff;
 }
 .top_welcome{
     text-align: center;
 }
 .top_welcome h1{
-   margin-top: 160px;/*265px на 160px*/
+   margin-top: 210px;/*265px на 210px*/
    font-size: 38px;/*48px на 38px*/
     font-weight:normal;
 }
 .top_welcome p{
     font-size: 16px;/*20px на 16px*/
-    margin-top: 35px;
-    margin-bottom: 50px;
+    margin-top: 45px;
+    margin-bottom: 60px;
     font-family:'roboto_slab', serif;
 }
 .top_welcome a{
     font-size: 14px;/*16px на 14px*/
     border-radius: 0px;
-    padding: 12px 28px;/*20px 40px на 12px 28px*/
+    padding: 14px 30px;/*20px 40px на 14px 30px*/
     border: 2px solid #fff;
 }
 @media screen and (min-width: 768px){
-    .top_section{
-        /*background: blue;
-    }*/
+.header_logo{
+    font-size: 24px;
+}
+.burger_menu{  /*бургер меню*/
+    font-size: 24px;
+}
+.top_welcome h1{
+   margin-top: 250px;/*265px на 250px*/
+   font-size: 40px;/*48px на 40px*/
+}    
+.top_welcome p{
+    font-size: 18px;/*20px на 18px*/
+    margin-top: 55px;
+    margin-bottom: 70px;
+}  
+.top_welcome a{
+    font-size: 16px;
+    padding: 16px 32px;/*20px 40px на 16px 32px*/
+}    
 }
 @media screen and (min-width: 992px){
-.page_header{
-    display: flex;
-    justify-content:space-between;
-}
-.top_section{
-    background-image: url(img/fon_top.png);
-    height: 770px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #fff;
-    /*background: blue;*/
-}
 .header_logo{
-    display: inline-block;
-    margin-top: 40px;
     font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-}
+ }
 .burger_menu{
     display: none;
     }
@@ -141,25 +138,18 @@ li{
     margin-left: 30px;
     color: #fff;
 }
-.top_welcome{
-    text-align: center;
-}
 .top_welcome h1{
    margin-top: 265px;
    font-size: 48px;
-   font-weight:normal;/*????????*/
 }
 .top_welcome p{
     font-size: 20px;
     margin-top: 35px;
     margin-bottom: 50px;
-    font-family:'roboto_slab', serif;
 }
 .top_welcome a{
     font-size: 16px;
-    border-radius: 0px;
     padding: 20px 40px;
-    border: 2px solid #fff;
 }
 }
     
