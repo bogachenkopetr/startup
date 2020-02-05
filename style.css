@@ -11,17 +11,6 @@
 }
 @font-face {
     font-family: 'montserrat';
-    src: url('fonts/monserat/montserrat-bold-webfont.eot');
-    src: url('fonts/monserat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/monserat/montserrat-bold-webfont.woff2') format('woff2'),
-         url('fonts/monserat/montserrat-bold-webfont.woff') format('woff'),
-         url('fonts/monserat/montserrat-bold-webfont.ttf') format('truetype'),
-         url('fonts/monserat/montserrat-bold-webfont.svg#montserratbold') format('svg');
-    font-style: normal;
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'montserrat';
     src: url('fonts/monserat/montserrat-regular-webfont.eot');
     src: url('fonts/monserat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/monserat/montserrat-regular-webfont.woff2') format('woff2'),
@@ -31,13 +20,24 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/monserat/montserrat-bold-webfont.eot');
+    src: url('fonts/monserat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/monserat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('fonts/monserat/montserrat-bold-webfont.woff') format('woff'),
+         url('fonts/monserat/montserrat-bold-webfont.ttf') format('truetype'),
+         url('fonts/monserat/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'montserrat', sans-serif; 
+    font-family: 'montserrat', sans-serif;
 }
 a{
     text-decoration: none;
@@ -52,7 +52,9 @@ li{
 }
 .top_section{
     background-image: url(img/fon_top.png);
-    height: 100vmax;
+    height: 100vh;
+    min-height: 540px;
+    max-height: 680px;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -68,7 +70,7 @@ li{
     font-weight: bold;
     color: #fff;
 }
-.burger_menu{ 
+.burger_menu{
     color: #fff;
     font-size: 22px;
     margin-top: 40px;
@@ -101,56 +103,58 @@ li{
     border: 2px solid #fff;
 }
 @media screen and (min-width: 768px){
-.header_logo{
-    font-size: 24px;
-}
-.burger_menu{ 
-    font-size: 24px;
-}
-.top_welcome h1{
-   margin-top: 250px;
-   font-size: 40px;
-}    
-.top_welcome p{
-   font-size: 18px;
-}  
-.top_welcome a{
-   font-size: 16px;
-   padding: 16px 32px;
-}    
+    .top-section {
+        max-height: 770px;
+    }
+    .header_logo{
+        font-size: 24px;
+    }
+    .burger_menu{
+        font-size: 24px;
+    }
+    .top_welcome h1{
+       font-size: 40px;
+    }
+    .top_welcome p{
+       font-size: 18px;
+    }
+    .top_welcome a{
+       font-size: 16px;
+       padding: 16px 32px;
+    }
 }
 @media screen and (min-width: 992px){
-.top_section{
-   height: 770px;
+    .top_section{
+       max-height: 800px;
+    }
+    .header_logo{
+       font-size: 24px;
+    }
+    .burger_menu{
+       display: none;
+    }
+    .menu_topnav{
+        display: flex;
+        margin-top: 40px;
+    }
+    .menu_topnav li{
+        font-size: 14px;
+        margin-left: 30px;
+        color: #fff;
+    }
+    .top_welcome h1{
+       margin-top: 250px;
+       font-size: 48px;
+    }
+    .top_welcome p{
+       font-size: 20px;
+    }
+    .top_welcome a{
+       font-size: 16px;
+       padding: 20px 40px;
+    }
 }
-.header_logo{
-   font-size: 24px;
-}
-.burger_menu{
-   display: none;
-}
-.menu_topnav{
-    display: flex;
-    margin-top: 40px;
-}
-.menu_topnav li{
-    font-size: 14px;
-    margin-left: 30px;
-    color: #fff;
-}
-.top_welcome h1{
-   margin-top: 265px;
-   font-size: 48px;
-}
-.top_welcome p{
-   font-size: 20px;
-}
-.top_welcome a{
-   font-size: 16px;
-   padding: 20px 40px;
-}
-}
-    
+
 
 
 
