@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'roboto_slab';
+    src: url('fonts/robotoslab/RobotoSlab-Regular-webfont.eot');
+    src: url('fonts/robotoslab/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotoslab/RobotoSlab-Regular-webfont.woff2') format('woff2'),
+         url('fonts/robotoslab/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('fonts/robotoslab/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('fonts/robotoslab/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/monserat/montserrat-regular-webfont.eot');
+    src: url('fonts/monserat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/monserat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/monserat/montserrat-regular-webfont.woff') format('woff'),
+         url('fonts/monserat/montserrat-regular-webfont.ttf') format('truetype'),
+         url('fonts/monserat/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/monserat/montserrat-bold-webfont.eot');
+    src: url('fonts/monserat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/monserat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('fonts/monserat/montserrat-bold-webfont.woff') format('woff'),
+         url('fonts/monserat/montserrat-bold-webfont.ttf') format('truetype'),
+         url('fonts/monserat/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.page_header{
+    display: flex;
+    justify-content:space-between;
+}
+.top_section{
+    background-image: url(img/fon_top.png);
+    height: 100vh;
+    min-height: 540px;
+    max-height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.section_inner{
+    max-width: 1140px;
+    margin:0 auto;
+    padding: 0 30px;
+}
+.header_logo{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.burger_menu{
+    color: #fff;
+    font-size: 22px;
+    margin-top: 40px;
+    border-radius: none;
+    background: none;
+    border: 0;
+}
+.menu_topnav{
+    display: none;
+}
+.top_welcome{
+    text-align: center;
+}
+.top_welcome h1{
+    margin-top: 170px;
+    font-size: 38px;
+    font-weight:normal;
+}
+.top_welcome p{
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-family:'roboto_slab', serif;
+}
+.top_welcome a{
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 14px 30px;
+    border: 2px solid #fff;
+}
+@media screen and (min-width: 768px){
+    .top-section {
+        max-height: 770px;
+    }
+    .header_logo{
+        font-size: 24px;
+    }
+    .burger_menu{
+        font-size: 24px;
+    }
+    .top_welcome h1{
+       font-size: 40px;
+    }
+    .top_welcome p{
+       font-size: 18px;
+    }
+    .top_welcome a{
+       font-size: 16px;
+       padding: 16px 32px;
+    }
+}
+@media screen and (min-width: 992px){
+    .top_section{
+       max-height: 800px;
+    }
+    .header_logo{
+       font-size: 24px;
+    }
+    .burger_menu{
+       display: none;
+    }
+    .menu_topnav{
+        display: flex;
+        margin-top: 40px;
+    }
+    .menu_topnav li{
+        font-size: 14px;
+        margin-left: 30px;
+        color: #fff;
+    }
+    .top_welcome h1{
+       margin-top: 250px;
+       font-size: 48px;
+    }
+    .top_welcome p{
+       font-size: 20px;
+    }
+    .top_welcome a{
+       font-size: 16px;
+       padding: 20px 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
