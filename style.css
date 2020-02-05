@@ -17,9 +17,8 @@
          url('fonts/monserat/montserrat-bold-webfont.woff') format('woff'),
          url('fonts/monserat/montserrat-bold-webfont.ttf') format('truetype'),
          url('fonts/monserat/montserrat-bold-webfont.svg#montserratbold') format('svg');
-    font-weight: bold;
     font-style: normal;
-
+    font-weight: bold;
 }
 @font-face {
     font-family: 'montserrat';
@@ -31,7 +30,6 @@
          url('fonts/monserat/montserrat-regular-webfont.svg#montserratregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 *{
     margin: 0;
@@ -39,7 +37,7 @@
     box-sizing: border-box;
 }
 body{
-   font-family: 'montserrat', sans-serif; 
+    font-family: 'montserrat', sans-serif; 
 }
 a{
     text-decoration: none;
@@ -54,7 +52,7 @@ li{
 }
 .top_section{
     background-image: url(img/fon_top.png);
-    height: 770px;
+    height: 100vmax;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -66,11 +64,11 @@ li{
 }
 .header_logo{
     margin-top: 40px;
-    font-size: 22px;/*24px на 22px*/
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
 }
-.burger_menu{  /*бургер меню*/
+.burger_menu{ 
     color: #fff;
     font-size: 22px;
     margin-top: 40px;
@@ -85,50 +83,52 @@ li{
     text-align: center;
 }
 .top_welcome h1{
-   margin-top: 210px;/*265px на 210px*/
-   font-size: 38px;/*48px на 38px*/
+    margin-top: 170px;
+    font-size: 38px;
     font-weight:normal;
 }
 .top_welcome p{
-    font-size: 16px;/*20px на 16px*/
-    margin-top: 45px;
-    margin-bottom: 60px;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 50px;
     font-family:'roboto_slab', serif;
 }
 .top_welcome a{
-    font-size: 14px;/*16px на 14px*/
+    display: inline-block;
+    font-size: 14px;
     border-radius: 0px;
-    padding: 14px 30px;/*20px 40px на 14px 30px*/
+    padding: 14px 30px;
     border: 2px solid #fff;
 }
 @media screen and (min-width: 768px){
 .header_logo{
     font-size: 24px;
 }
-.burger_menu{  /*бургер меню*/
+.burger_menu{ 
     font-size: 24px;
 }
 .top_welcome h1{
-   margin-top: 250px;/*265px на 250px*/
-   font-size: 40px;/*48px на 40px*/
+   margin-top: 250px;
+   font-size: 40px;
 }    
 .top_welcome p{
-    font-size: 18px;/*20px на 18px*/
-    margin-top: 55px;
-    margin-bottom: 70px;
+   font-size: 18px;
 }  
 .top_welcome a{
-    font-size: 16px;
-    padding: 16px 32px;/*20px 40px на 16px 32px*/
+   font-size: 16px;
+   padding: 16px 32px;
 }    
 }
 @media screen and (min-width: 992px){
+.top_section{
+   height: 770px;
+}
 .header_logo{
-    font-size: 24px;
- }
+   font-size: 24px;
+}
 .burger_menu{
-    display: none;
-    }
+   display: none;
+}
 .menu_topnav{
     display: flex;
     margin-top: 40px;
@@ -143,13 +143,11 @@ li{
    font-size: 48px;
 }
 .top_welcome p{
-    font-size: 20px;
-    margin-top: 35px;
-    margin-bottom: 50px;
+   font-size: 20px;
 }
 .top_welcome a{
-    font-size: 16px;
-    padding: 20px 40px;
+   font-size: 16px;
+   padding: 20px 40px;
 }
 }
     
