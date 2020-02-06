@@ -110,35 +110,40 @@ main{
     width: 100%;
 }
 .main_section_services{
-    height: 580px;
-    /*background: blue;*/
+    height: 100vh;
 }
 .main_services h1{
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
+    font-weight:normal;
     color: #646464;
 }
 .main_services p{
-    margin-top: 30px;
-    margin-bottom: 70px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
+    font-family:'roboto_slab', serif;
     color: #646464;
 }
 .icon_services{
     text-align: center;
 }
 .main_clean{
-    display: flex;
     justify-content: center;
     color: #646464;
     text-align: center;
 }
-.clean{
-    margin-right: 70px;
+.main_clean li{
     font-size: 14px;
+    font-family:'roboto_slab', serif;
+}
+.clean{
+    margin-right: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 .clean:first-child .icon{
     background: #c0301c;
@@ -147,9 +152,10 @@ main{
     margin-right: 0;
 }
 .clean h3{
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 14px;
+    font-weight:normal;
 }
 .icon{
    width: 85px;
@@ -183,6 +189,22 @@ main{
        font-size: 16px;
        padding: 16px 32px;
     }
+    /*----------------------------------*/
+    .main_clean{
+        display: flex;
+    }
+    .main_services h1{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .main_services p{
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .clean h3{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 @media screen and (min-width: 992px){
     .top_section{
@@ -214,6 +236,27 @@ main{
        font-size: 16px;
        padding: 20px 40px;
     }
+    /*----------------------------------*/
+    .main_section_services{
+        height: 580px;
+    }
+    .main_services h1{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .main_services p{
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .clean{
+        margin-bottom: 100px;
+    }
+    .clean h3{
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    /*----------------------------------*/
+    
 }
 
 
