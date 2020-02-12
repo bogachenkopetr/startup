@@ -109,14 +109,11 @@ main{
     flex-direction: column;
     width: 100%;
 }
-.main_section_services{
-    height: 100vh;
-}
-.main_services h1{
+.main_services h2{
     margin-top: 50px;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight:normal;
     color: #646464;
 }
@@ -124,40 +121,41 @@ main{
     margin-top: 15px;
     margin-bottom: 30px;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     font-family:'roboto_slab', serif;
     color: #646464;
 }
-.icon_services{
+.icon_serv{
     text-align: center;
 }
-.main_clean{
+.blocks_services{
+    display: flex;
     justify-content: center;
     color: #646464;
     text-align: center;
 }
-.main_clean li{
-    font-size: 14px;
+.blocks_services p{
+    font-size: 10px;
     font-family:'roboto_slab', serif;
 }
-.clean{
-    margin-right: 20px;
+.block_one{
+    margin-right: 10px;
     font-size: 14px;
     margin-bottom: 20px;
 }
-.clean:first-child .icon{
+.block_one:first-child .icon_services{
     background: #c0301c;
 }
-.clean:last-child{
+.block_one:last-child{
     margin-right: 0;
 }
-.clean h3{
+.block_one h3{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight:normal;
 }
-.icon{
+.icon_services{
    width: 85px;
    height: 85px;
    border: 2px solid #e2e2e2;
@@ -165,7 +163,7 @@ main{
    display: inline-block;
    line-height: 78px;
 }
-.icon img{
+.icon_services img{
   vertical-align: middle;
 }
 
@@ -190,20 +188,24 @@ main{
        padding: 16px 32px;
     }
     /*----------------------------------*/
-    .main_clean{
+    .blocks_services{
         display: flex;
     }
-    .main_services h1{
+    .main_services h2{
         margin-top: 70px;
         margin-bottom: 30px;
     }
     .main_services p{
         margin-top: 30px;
         margin-bottom: 70px;
+        font-size: 14px;
     }
-    .clean h3{
+    .block_one h3{
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    .blocks_services p{
+       font-size: 11px;
     }
 }
 @media screen and (min-width: 992px){
@@ -240,20 +242,32 @@ main{
     .main_section_services{
         height: 580px;
     }
-    .main_services h1{
+    .main_services h2{
         margin-top: 100px;
         margin-bottom: 30px;
+        font-size: 20px;
     }
     .main_services p{
         margin-top: 30px;
         margin-bottom: 70px;
+        font-size: 16px;
     }
-    .clean{
+    .hr{
+        size: 5px;/*??????????*/
+        width: 5px;
+    }
+    .block_one{
         margin-bottom: 100px;
+        margin-right: 20px;
     }
-    .clean h3{
+    .block_one h3{
         margin-top: 30px;
         margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .block_one p{
+        font-size: 14px;
+        line-height:1.7;
     }
     /*----------------------------------*/
     
