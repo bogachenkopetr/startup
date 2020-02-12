@@ -102,7 +102,6 @@ li{
     padding: 14px 30px;
     border: 2px solid #fff;
 }
-
 /*----------------------------------*/
 main{
     display: flex;
@@ -117,56 +116,57 @@ main{
     font-weight:normal;
     color: #646464;
 }
+.services_line{
+    border: 0;
+    border-top: 1px solid #646464;
+    margin: 0 185px 0 185px;
+}
 .main_services p{
     margin-top: 15px;
     margin-bottom: 30px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     font-family:'roboto_slab', serif;
     color: #646464;
 }
-.icon_serv{
-    text-align: center;
-}
-.blocks_services{
+.service_list{
     display: flex;
     justify-content: center;
     color: #646464;
     text-align: center;
 }
-.blocks_services p{
+.service_list p{
     font-size: 10px;
     font-family:'roboto_slab', serif;
 }
-.block_one{
+.service_item{
     margin-right: 10px;
     font-size: 14px;
     margin-bottom: 20px;
 }
-.block_one:first-child .icon_services{
+.service_item:first-child .icon_services{
     background: #c0301c;
 }
-.block_one:last-child{
+.service_item:last-child{
     margin-right: 0;
 }
-.block_one h3{
+.service_item h3{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight:normal;
 }
 .icon_services{
-   width: 85px;
-   height: 85px;
+   width: 65px;
+   height: 65px;
    border: 2px solid #e2e2e2;
    border-radius: 100%;
    display: inline-block;
-   line-height: 78px;
-}
+   line-height: 56px;
+   }
 .icon_services img{
   vertical-align: middle;
 }
-
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -188,24 +188,33 @@ main{
        padding: 16px 32px;
     }
     /*----------------------------------*/
-    .blocks_services{
+    .service_list{
         display: flex;
     }
     .main_services h2{
         margin-top: 70px;
         margin-bottom: 30px;
     }
+    .services_line{
+        margin: 0 329px 0 329px;
+    }
     .main_services p{
         margin-top: 30px;
         margin-bottom: 70px;
-        font-size: 14px;
+        font-size: 16px;
     }
-    .block_one h3{
+    .service_item h3{
         margin-top: 15px;
         margin-bottom: 15px;
+        font-size: 13px;
     }
-    .blocks_services p{
-       font-size: 11px;
+    .service_list p{
+       font-size: 11.5px;
+    }
+    .icon_services{
+       width: 75px;
+       height: 75px;
+       line-height: 66px;
     }
 }
 @media screen and (min-width: 992px){
@@ -241,36 +250,41 @@ main{
     /*----------------------------------*/
     .main_section_services{
         height: 580px;
+        overflow: auto;/*?????/*/
     }
     .main_services h2{
         margin-top: 100px;
         margin-bottom: 30px;
         font-size: 20px;
     }
+    .services_line{
+        border-top: 2px solid #646464;
+        margin: 0 515px 0 515px;
+    }
     .main_services p{
         margin-top: 30px;
         margin-bottom: 70px;
         font-size: 16px;
     }
-    .hr{
-        size: 5px;/*??????????*/
-        width: 5px;
-    }
-    .block_one{
+    .service_item{
         margin-bottom: 100px;
         margin-right: 20px;
     }
-    .block_one h3{
+    .service_item h3{
         margin-top: 30px;
         margin-bottom: 25px;
         font-size: 14px;
     }
-    .block_one p{
+    .service_item p{
         font-size: 14px;
         line-height:1.7;
     }
-    /*----------------------------------*/
-    
+    .icon_services{
+       width: 85px;
+       height: 85px;
+       line-height: 78px;
+    }
+    /*----------------------------------*/  
 }
 
 
