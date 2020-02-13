@@ -169,6 +169,56 @@ main{
 .icon_services img{
   vertical-align: middle;
 }
+
+/*------------main_section_ubout_us--------------*/
+.main_section_ubout_us{
+    background: #f8f8f8;
+    text-align: center;
+    height: 850px;
+    color: #646464;
+    margin:0 auto;
+    width: 100%;
+}
+.main_ubout_us h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.main_ubout_us p{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 16px;
+}
+.main_ubout_us_2p{ /*расстояние между обзацами????*/
+    display: flex;
+    justify-content:space-between;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+.icon_ubout_us_photo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.icon_ubout_us_photo li{/*??????????*/
+    margin-right: 30px;
+    width: 260px;
+    height: 250px;
+}
+.icon_ubout_us_photo img{
+    margin-bottom: 20px;
+}
+.icon_ubout_us_photo li:last-child{
+    margin-right: 0;
+}
+.icon_ubout_us_photo span{
+    font-size: 13px;
+}
+.icon_ubout_us_name li{/*???????????*/
+    margin-right: 165px;
+    font-size: 14px;
+}
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
