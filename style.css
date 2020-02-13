@@ -102,6 +102,73 @@ li{
     padding: 14px 30px;
     border: 2px solid #fff;
 }
+/*----------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main_services h2{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight:normal;
+    color: #646464;
+}
+.services_line{
+    border: 0;
+    border-top: 1px solid #646464;
+    width: 50px;
+    margin: 0 auto;
+}
+.services_description {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 13px;
+    font-family:'roboto_slab', serif;
+    color: #646464;
+}
+.service_list{
+    display: flex;
+    justify-content: center;
+    color: #646464;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service_list p{
+    font-size: 10px;
+    font-family:'roboto_slab', serif;
+}
+.service_item{
+    margin-right: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.service_item:first-child .icon_services{
+    background: #c0301c;
+}
+.service_item:last-child{
+    margin-right: 0;
+}
+.service_item h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight:normal;
+}
+.icon_services{
+   width: 65px;
+   height: 65px;
+   border: 2px solid #e2e2e2;
+   border-radius: 100%;
+   display: inline-block;
+   line-height: 56px;
+   }
+.icon_services img{
+  vertical-align: middle;
+}
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -122,10 +189,36 @@ li{
        font-size: 16px;
        padding: 16px 32px;
     }
+
+    /*----------------------------------*/
+    .service_list{
+        display: flex;
+    }
+    .main_services h2{
+        margin-bottom: 30px;
+    }
+    .services_description {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+    .service_item h3{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    .service_list p{
+       font-size: 12px;
+    }
+    .icon_services{
+       width: 75px;
+       height: 75px;
+       line-height: 66px;
+    }
 }
 @media screen and (min-width: 992px){
     .top_section{
-       max-height: 800px;
+       height: 770px;
     }
     .header_logo{
        font-size: 24px;
@@ -153,6 +246,37 @@ li{
        font-size: 16px;
        padding: 20px 40px;
     }
+    /*----------------------------------*/
+    .main_services h2{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .services_line{
+        border-top: 2px solid #646464;
+    }
+    .services_description{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+    .service_item{
+        margin-right: 20px;
+    }
+    .service_item h3{
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .service_item p{
+        font-size: 14px;
+        line-height:1.7;
+    }
+    .icon_services{
+       width: 85px;
+       height: 85px;
+       line-height: 78px;
+    }
+    /*----------------------------------*/
 }
 
 
