@@ -102,7 +102,7 @@ li{
     padding: 14px 30px;
     border: 2px solid #fff;
 }
-/*----------------------------------*/
+/*----------------SERVICES------------------*/
 main{
     display: flex;
     flex-direction: column;
@@ -170,54 +170,69 @@ main{
   vertical-align: middle;
 }
 
-/*------------main_section_ubout_us--------------*/
+/*------------ubout_us--------------------*/
 .main_section_ubout_us{
     background: #f8f8f8;
     text-align: center;
-    height: 850px;
     color: #646464;
     margin:0 auto;
     width: 100%;
 }
-.main_ubout_us h1{
-    margin-top: 100px;
+.ubout_us_title h1{
+    margin-top: 50px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
 }
-.main_ubout_us p{
-    margin-top: 30px;
-    margin-bottom: 70px;
-    font-size: 16px;
+.ubout_us_line{
+    border: 0;
+    border-top: 1px solid #646464;
+    width: 50px;
+    margin: 0 auto;
 }
-.main_ubout_us_2p{ /*расстояние между обзацами????*/
+.ubout_us_title p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-family:'roboto_slab', serif;
+}
+.ubout_us_list{
     display: flex;
     justify-content:space-between;
-    font-size: 14px;
+    font-size: 10px;
     text-align: left;
+    font-family:'roboto_slab', serif;
     line-height: 1.5;
 }
-.icon_ubout_us_photo{
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
+.ubout_us_list p{
+    margin-right: 20px;
 }
-.icon_ubout_us_photo li{/*??????????*/
-    margin-right: 30px;
-    width: 260px;
-    height: 250px;
-}
-.icon_ubout_us_photo img{
-    margin-bottom: 20px;
-}
-.icon_ubout_us_photo li:last-child{
+.ubout_us_list p:last-child{
     margin-right: 0;
 }
-.icon_ubout_us_photo span{
-    font-size: 13px;
+.ubout_us_photo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
-.icon_ubout_us_name li{/*???????????*/
-    margin-right: 165px;
-    font-size: 14px;
+.ubout_us_photo li{
+    margin-right: 5px;
+    font-size: 10px;
+}
+.ubout_us_photo li:last-child{
+    margin-right: 0;
+}
+.ubout_us_photo img{
+    margin-bottom: 10px;
+    width: 101px;
+    height: 94px;
+}
+.ubout_us_photo span{
+    font-family:'roboto_slab', serif;
+    font-size: 9px;
+}
+.ubout_us_photo{
+    margin-bottom: 50px;
 }
 @media screen and (min-width: 768px){
     .top-section {
@@ -240,7 +255,7 @@ main{
        padding: 16px 32px;
     }
 
-    /*----------------------------------*/
+    /*---------------SERVICES-------------------*/
     .service_list{
         display: flex;
     }
@@ -264,6 +279,24 @@ main{
        width: 75px;
        height: 75px;
        line-height: 66px;
+    }
+/*----------------ubout_us------------------*/
+    .ubout_us_photo img{
+        margin-bottom: 20px;
+        width: 173px;
+        height: 162px;
+    }
+    .ubout_us_title p{
+        font-size: 16px;
+    }
+    .ubout_us_list{
+        font-size: 12px;
+    }
+    .ubout_us_photo li{
+        font-size: 12px;
+    }
+    .ubout_us_photo span{
+        font-size: 10px;
     }
 }
 @media screen and (min-width: 992px){
@@ -296,7 +329,7 @@ main{
        font-size: 16px;
        padding: 20px 40px;
     }
-    /*----------------------------------*/
+    /*---------------SERVICES-------------------*/
     .main_services h2{
         margin-bottom: 30px;
         font-size: 20px;
@@ -322,11 +355,52 @@ main{
         line-height:1.7;
     }
     .icon_services{
-       width: 85px;
-       height: 85px;
-       line-height: 78px;
+        width: 85px;
+        height: 85px;
+        line-height: 78px;
     }
-    /*----------------------------------*/
+    /*---------------ubout_us-------------------*/
+    .main_section_ubout_us{
+        height: 850px;
+    }
+    .ubout_us_title h1{
+        margin-top: 100px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .ubout_us_line{
+        border-top: 2px solid #646464;
+    }
+    .ubout_us_title p{
+        margin-top: 30px;
+        margin-bottom: 70px;
+        font-size: 16px;
+    }
+    .ubout_us_list{
+        font-size: 14px;
+    }
+    .ubout_us_list p{
+        margin-right: 30px;
+    }
+    .ubout_us_photo{
+        margin-top: 70px;
+    }
+    .ubout_us_photo img{
+        margin-bottom: 20px;
+        width: 263px;
+        height: 250px;
+    }
+    .ubout_us_photo li{
+        margin-right: 12px;
+        width: 260px;
+        height: 250px;
+        font-size: 14px;
+    }
+    .ubout_us_photo span{
+        font-size: 13px;
+    }
+
 }
 
 
