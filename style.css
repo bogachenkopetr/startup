@@ -167,36 +167,36 @@ main{
    line-height: 56px;
    }
 .icon_services img{
-  vertical-align: middle;
+   vertical-align: middle;
 }
 
-/*------------ubout_us--------------------*/
-.main_section_ubout_us{
+/*------------about_us--------------------*/
+.main_section_about_us{ 
     background: #f8f8f8;
-    text-align: center;
+    text-align: center; 
     color: #646464;
     margin:0 auto;
     width: 100%;
 }
-.ubout_us_title h1{
+.about_us_title h1{
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: normal;
 }
-.ubout_us_line{
+.about_us_line{
     border: 0;
     border-top: 1px solid #646464;
     width: 50px;
     margin: 0 auto;
 }
-.ubout_us_title p{
+.about_us_title p{
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 13px;
     font-family:'roboto_slab', serif;
 }
-.ubout_us_list{
+.about_us_list{
     display: flex;
     justify-content:space-between;
     font-size: 10px;
@@ -204,34 +204,94 @@ main{
     font-family:'roboto_slab', serif;
     line-height: 1.5;
 }
-.ubout_us_list p{
+.about_us_list p{
     margin-right: 20px;
 }
-.ubout_us_list p:last-child{
+.about_us_list p:last-child{
     margin-right: 0;
 }
-.ubout_us_photo{
+.about_us_photo_wrapper{
+    position: relative;  
+}
+.button_left, 
+.button_right{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    font-family:'roboto_slab', serif;
+    font-size: 10px;
+    background: #8d8d8d;  
+    border: 0;
+    color: #fff;
+    line-height: 14px;
+    top:32%;
+}
+.button_left{
+     z-index: 90;  
+     left: 0;
+}
+.button_right{
+    z-index: 100;  
+    right: 0.5px;
+}
+.button_left:hover{
+    background: #c0301c;
+}
+.button_right:hover{
+    background: #c0301c;
+}
+.photo_dark{
+    position: absolute;
+    left:0;
+    right: -2px;
+    top:0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.about_us_photo li:hover .photo_dark{
+    display: block;
+}
+.media_contacts{ /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+    display:flex;
+    position: absolute;
+    left: 10px;
+    bottom:15px;
+    line-height: 15px;
+}
+.media_contacts a{
+    width: 14px;
+    height:14px;
+    display: inline-block;
+    vertical-align: top;  /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+.media_contacts a:hover{
+    background: #c0301c;
+}
+.about_us_photo{
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-.ubout_us_photo li{
+.about_us_photo li{
     margin-right: 5px;
     font-size: 10px;
+    width: 101px;
+    position: relative;
 }
-.ubout_us_photo li:last-child{
+.about_us_photo li:last-child{
     margin-right: 0;
 }
-.ubout_us_photo img{
+.about_us_photo .avatar{
     margin-bottom: 10px;
-    width: 101px;
-    height: 94px;
+    width: 100%;
 }
-.ubout_us_photo span{
+.about_us_photo span{
     font-family:'roboto_slab', serif;
     font-size: 9px;
+    display: block;
 }
-.ubout_us_photo{
+.about_us_photo{
     margin-bottom: 50px;
 }
 @media screen and (min-width: 768px){
@@ -280,22 +340,40 @@ main{
        height: 75px;
        line-height: 66px;
     }
-/*----------------ubout_us------------------*/
-    .ubout_us_photo img{
+/*----------------about_us------------------*/
+    .about_us_photo .avatar{
         margin-bottom: 20px;
         width: 173px;
         height: 162px;
     }
-    .ubout_us_title p{
+    .about_us_title p{
         font-size: 16px;
     }
-    .ubout_us_list{
+    .about_us_list{
         font-size: 12px;
     }
-    .ubout_us_photo li{
-        font-size: 12px;
+    .button_left, 
+    .button_right{    /*!!!!!!!!!!!!*/
+        height: 25px;
+        width: 25px;
+        font-size: 14px;
+        line-height: 14px;
+        top:32%;
     }
-    .ubout_us_photo span{
+    .button_left{
+         /*z-index: 90;  
+         left: 0;*/
+    }
+    .button_right{
+       /* z-index: 100;  
+        right: 0.5px; */ /*!!!!!!!!!!!!!!1*/
+    }
+    .about_us_photo li{
+        font-size: 12px;
+        width: 166px;
+        margin-right: 15px;
+    }
+    .about_us_photo span{
         font-size: 10px;
     }
 }
@@ -359,45 +437,70 @@ main{
         height: 85px;
         line-height: 78px;
     }
-    /*---------------ubout_us-------------------*/
-    .main_section_ubout_us{
+    /*---------------about_us-------------------*/
+    .main_section_about_us{
         height: 850px;
     }
-    .ubout_us_title h1{
+    .about_us_title h1{
         margin-top: 100px;
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: normal;
     }
-    .ubout_us_line{
+    .about_us_line{
         border-top: 2px solid #646464;
     }
-    .ubout_us_title p{
+    .about_us_title p{
         margin-top: 30px;
         margin-bottom: 70px;
         font-size: 16px;
     }
-    .ubout_us_list{
+    .about_us_list{
         font-size: 14px;
     }
-    .ubout_us_list p{
+    .about_us_list p{         
         margin-right: 30px;
     }
-    .ubout_us_photo{
+    .button_left, 
+    .button_right{
+        height: 35px;
+        width: 35px;   
+        font-size: 20px;
+        line-height: 15px;
+        top:42%;
+    }
+    .button_left{
+         z-index: 90; 
+         left: 2px;
+    }
+    .button_right{
+        z-index: 100;   
+        right: 0;
+    }
+    .media_contacts{  /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+        left: 80px;
+        bottom:35px;
+        line-height: 35px;
+    }
+    .media_contacts a{
+        width: 28px;
+        height:28px; /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+    }
+    .about_us_photo{
         margin-top: 70px;
     }
-    .ubout_us_photo img{
+    .about_us_photo .avatar{
         margin-bottom: 20px;
         width: 263px;
         height: 250px;
     }
-    .ubout_us_photo li{
+    .about_us_photo li{
         margin-right: 12px;
         width: 260px;
         height: 250px;
         font-size: 14px;
     }
-    .ubout_us_photo span{
+    .about_us_photo span{
         font-size: 13px;
     }
 
