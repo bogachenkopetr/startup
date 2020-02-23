@@ -234,12 +234,12 @@ main{
     z-index: 100;  
     right: 0.5px;
 }
-.button_left:hover{
+/*.button_left:hover{
     background: #c0301c;
 }
 .button_right:hover{
     background: #c0301c;
-}
+}*/
 .photo_dark{
     position: absolute;
     left:0;
@@ -250,9 +250,9 @@ main{
     display: none;
 }
 .about_us_photo li:hover .photo_dark{
-    display: block;
+    display: none;
 }
-.media_contacts{ /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+.media_contacts{ 
     display:flex;
     position: absolute;
     left: 10px;
@@ -263,7 +263,7 @@ main{
     width: 14px;
     height:14px;
     display: inline-block;
-    vertical-align: top;  /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+    vertical-align: top; 
 }
 .media_contacts a:hover{
     background: #c0301c;
@@ -353,7 +353,7 @@ main{
         font-size: 12px;
     }
     .button_left, 
-    .button_right{    /*!!!!!!!!!!!!*/
+    .button_right{ 
         height: 25px;
         width: 25px;
         font-size: 14px;
@@ -366,7 +366,7 @@ main{
     }
     .button_right{
        /* z-index: 100;  
-        right: 0.5px; */ /*!!!!!!!!!!!!!!1*/
+        right: 0.5px; */ 
     }
     .about_us_photo li{
         font-size: 12px;
@@ -375,6 +375,9 @@ main{
     }
     .about_us_photo span{
         font-size: 10px;
+    }
+    .about_us_photo .avatar{
+        width: 100%;
     }
 }
 @media screen and (min-width: 992px){
@@ -477,22 +480,31 @@ main{
         z-index: 100;   
         right: 0;
     }
-    .media_contacts{  /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .button_left:hover{
+        background: #c0301c;
+    }
+    .button_right:hover{
+        background: #c0301c;
+    }
+    .media_contacts{  
         left: 80px;
         bottom:35px;
         line-height: 35px;
     }
     .media_contacts a{
         width: 28px;
-        height:28px; /*!!!!!!!!!!!!!!!!!!!!!!!!*/
+        height:28px; 
+    }
+        .about_us_photo li:hover .photo_dark{
+        display: block;
     }
     .about_us_photo{
         margin-top: 70px;
     }
     .about_us_photo .avatar{
         margin-bottom: 20px;
-        width: 263px;
-        height: 250px;
+        width: 101%;
+        height: 100%;
     }
     .about_us_photo li{
         margin-right: 12px;
