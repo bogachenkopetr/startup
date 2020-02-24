@@ -173,10 +173,10 @@ main{
 /*------------about_us--------------------*/
 .main_section_about_us{ 
     background: #f8f8f8;
-    text-align: center; 
     color: #646464;
-    margin:0 auto;
-    width: 100%;
+}
+.about_us_title {
+    text-align: center;
 }
 .about_us_title h1{
     margin-top: 50px;
@@ -211,7 +211,7 @@ main{
     margin-right: 0;
 }
 .about_us_photo_wrapper{
-    position: relative;  
+    position: relative;
 }
 .button_left, 
 .button_right{
@@ -220,25 +220,43 @@ main{
     width: 15px;
     font-family:'roboto_slab', serif;
     font-size: 10px;
-    background: #8d8d8d;  
+    background: #8d8d8d;
     border: 0;
     color: #fff;
     line-height: 15px;
-    top:29%;
+    top: 35%;
 }
 .button_left{
-     z-index: 90;  
+     z-index: 90;
      left: 0;
 }
 .button_right{
-    z-index: 100;  
-    right: 0.5px;
+    z-index: 100;
+    right: 0;
 }
-.button_left:hover{
+.button_left:hover,
+.button_right:hover {
     background: #c0301c;
 }
-.button_right:hover{
-    background: #c0301c;
+.about_us_photo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.about_us_photo li{
+    margin-right: 2%;
+    font-size: 10px;
+    width: 23.5%;
+    text-align: center;
+}
+.about_us_photo li:last-child{
+    margin-right: 0;
+}
+.about_us_photo span{
+    font-family:'roboto_slab', serif;
+    font-size: 9px;
+    display: block;
 }
 .avatar_wrapper{
     position: relative;
@@ -262,41 +280,26 @@ main{
 }
 .media_contacts{ 
     position: absolute;
-    left: 16px;
+    left: 0;
     bottom:15px;
     line-height: 5px;
+    width: 100%;
     text-align: center;
 }
 .media_contacts a{
-    width: 17px;
-    height:18px;
+    width: 22px;
+    height: 22px;
+    margin: 0 1px;
     display: inline-block;
-    vertical-align: top; 
+    line-height: 20px;
+}
+.media_contacts img {
+    vertical-align: middle;
 }
 .media_contacts a:hover{
     background: #c0301c;
 }
-.about_us_photo{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-.about_us_photo li{
-    margin-right: 2%;
-    font-size: 10px;
-    width: 23.5%;
-}
-.about_us_photo li:last-child{
-    margin-right: 0;
-}
-.about_us_photo span{
-    font-family:'roboto_slab', serif;
-    font-size: 9px;
-    display: block;
-}
-.about_us_photo{
-    margin-bottom: 50px;
-}
+
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -318,7 +321,7 @@ main{
        padding: 16px 32px;
     }
 
-    /*---------------SERVICES-------------------*/
+    /*---------------services-------------------*/
     .service_list{
         display: flex;
     }
@@ -343,7 +346,8 @@ main{
        height: 75px;
        line-height: 66px;
     }
-/*----------------about_us------------------*/
+
+    /*----------------about us------------------*/
     .about_us_title p{
         font-size: 16px;
     }
@@ -356,13 +360,9 @@ main{
         width: 25px;
         font-size: 14px;
         line-height: 25px;
-        top:33%;
     }
-    .media_contacts{ 
-        left: 48px;
-        bottom:15px;
-        line-height: 20px;
-        text-align: center;
+    .media_contacts {
+        bottom: 25px;
     }
     .about_us_photo li{
         font-size: 12px;
@@ -401,6 +401,7 @@ main{
        font-size: 16px;
        padding: 20px 40px;
     }
+
     /*---------------SERVICES-------------------*/
     .main_services h2{
         margin-bottom: 30px;
@@ -431,7 +432,8 @@ main{
         height: 85px;
         line-height: 78px;
     }
-    /*---------------about_us-------------------*/
+
+    /*---------------about us-------------------*/
     .main_section_about_us{
         height: 850px;
     }
@@ -444,7 +446,7 @@ main{
     .about_us_line{
         border-top: 2px solid #646464;
     }
-    .about_us_title p{
+    .about_us_title p {
         margin-top: 30px;
         margin-bottom: 70px;
         font-size: 16px;
@@ -452,39 +454,24 @@ main{
     .about_us_list{
         font-size: 14px;
     }
-    .about_us_list p{         
+    .about_us_list p {
         margin-right: 30px;
     }
     .button_left, 
     .button_right{
         height: 35px;
-        width: 35px;   
+        width: 35px;
         font-size: 20px;
         line-height: 17px;
-        top:35%;
     }
-    .button_left{
-        z-index: 90; 
-        left: 0;
-    }
-    .button_right{
-        z-index: 100;   
-        right: -1px;
-    }
-    .button_left:hover{
-        background: #c0301c;
-    }
-    .button_right:hover{
-        background: #c0301c;
-    }
-    .media_contacts{  
-        left: 65px;
+    .media_contacts{
         bottom:35px;
         line-height: 35px;
     }
     .media_contacts a{
         width: 28px;
-        height:28px; 
+        height: 28px;
+        line-height: 26px;
     }
     .about_us_photo li:hover .photo_dark{
         display: block;
@@ -501,7 +488,6 @@ main{
     .about_us_photo span{
         font-size: 13px;
     }
-
 }
 
 
