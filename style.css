@@ -223,8 +223,8 @@ main{
     background: #8d8d8d;  
     border: 0;
     color: #fff;
-    line-height: 14px;
-    top:32%;
+    line-height: 15px;
+    top:29%;
 }
 .button_left{
      z-index: 90;  
@@ -234,12 +234,20 @@ main{
     z-index: 100;  
     right: 0.5px;
 }
-/*.button_left:hover{
+.button_left:hover{
     background: #c0301c;
 }
 .button_right:hover{
     background: #c0301c;
-}*/
+}
+.avatar_wrapper{
+    position: relative;
+    margin-bottom: 10px;
+}
+.about_us_photo .avatar{
+    width: 100%;
+    vertical-align: top;
+}
 .photo_dark{
     position: absolute;
     left:0;
@@ -250,18 +258,18 @@ main{
     display: none;
 }
 .about_us_photo li:hover .photo_dark{
-    display: none;
+    display: block;
 }
 .media_contacts{ 
-    display:flex;
     position: absolute;
-    left: 10px;
+    left: 16px;
     bottom:15px;
-    line-height: 15px;
+    line-height: 5px;
+    text-align: center;
 }
 .media_contacts a{
-    width: 14px;
-    height:14px;
+    width: 17px;
+    height:18px;
     display: inline-block;
     vertical-align: top; 
 }
@@ -274,17 +282,12 @@ main{
     margin-top: 40px;
 }
 .about_us_photo li{
-    margin-right: 5px;
+    margin-right: 2%;
     font-size: 10px;
-    width: 101px;
-    position: relative;
+    width: 23.5%;
 }
 .about_us_photo li:last-child{
     margin-right: 0;
-}
-.about_us_photo .avatar{
-    margin-bottom: 10px;
-    width: 100%;
 }
 .about_us_photo span{
     font-family:'roboto_slab', serif;
@@ -341,11 +344,6 @@ main{
        line-height: 66px;
     }
 /*----------------about_us------------------*/
-    .about_us_photo .avatar{
-        margin-bottom: 20px;
-        width: 173px;
-        height: 162px;
-    }
     .about_us_title p{
         font-size: 16px;
     }
@@ -357,27 +355,20 @@ main{
         height: 25px;
         width: 25px;
         font-size: 14px;
-        line-height: 14px;
-        top:32%;
+        line-height: 25px;
+        top:33%;
     }
-    .button_left{
-         /*z-index: 90;  
-         left: 0;*/
-    }
-    .button_right{
-       /* z-index: 100;  
-        right: 0.5px; */ 
+    .media_contacts{ 
+        left: 48px;
+        bottom:15px;
+        line-height: 20px;
+        text-align: center;
     }
     .about_us_photo li{
         font-size: 12px;
-        width: 166px;
-        margin-right: 15px;
     }
     .about_us_photo span{
         font-size: 10px;
-    }
-    .about_us_photo .avatar{
-        width: 100%;
     }
 }
 @media screen and (min-width: 992px){
@@ -469,16 +460,16 @@ main{
         height: 35px;
         width: 35px;   
         font-size: 20px;
-        line-height: 15px;
-        top:42%;
+        line-height: 17px;
+        top:35%;
     }
     .button_left{
-         z-index: 90; 
-         left: 2px;
+        z-index: 90; 
+        left: 0;
     }
     .button_right{
         z-index: 100;   
-        right: 0;
+        right: -1px;
     }
     .button_left:hover{
         background: #c0301c;
@@ -487,7 +478,7 @@ main{
         background: #c0301c;
     }
     .media_contacts{  
-        left: 80px;
+        left: 65px;
         bottom:35px;
         line-height: 35px;
     }
@@ -495,21 +486,16 @@ main{
         width: 28px;
         height:28px; 
     }
-        .about_us_photo li:hover .photo_dark{
+    .about_us_photo li:hover .photo_dark{
         display: block;
     }
     .about_us_photo{
         margin-top: 70px;
     }
-    .about_us_photo .avatar{
+    .avatar_wrapper{
         margin-bottom: 20px;
-        width: 101%;
-        height: 100%;
     }
     .about_us_photo li{
-        margin-right: 12px;
-        width: 260px;
-        height: 250px;
         font-size: 14px;
     }
     .about_us_photo span{
