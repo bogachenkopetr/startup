@@ -299,50 +299,112 @@ main{
 .media_contacts a:hover{
     background: #c0301c;
 }
-
-/*--------------latest works -------------*/
+/*--------------latest works ----------*/
 .main_section_latest_works{
     height: 1380px;
-    /*background:grey;*/
 }
-.main_latest_works{
+.latest_works_title{
     text-align: center;
     color: #555555;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 }
-.main_latest_works h1{
-    font-size: 20px;
-    margin-top: 100px;
+.latest_works_title h1{
+    font-size: 18px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
-.latest_works_p a{
+.latest_works_line{
+    border: 0;
+    border-top: 2px solid #646464;
+    width: 50px;
+    margin: 0 auto;
+}
+.latest_works_menu a{
+    font-family:'roboto_slab', serif;
     color: #555555;
-    font-size: 16px;
+    font-size: 13px;
     margin-top: 30px;
     margin-right: 30px;
 }
-.latest_works_p{
+.latest_works_menu{
     margin-top: 30px;
 }
-.latest_works_all{
-    color: red;
+.latest_works_menu a:hover{
+    color: #c0301c;
 }
-.icon_latest_works_photo1{
+.latest_works_photo_section{
     display:flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.icon_latest_works_photo1 li{
-    margin-right: 30px;
+.latest_works_photo_album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.icon_latest_works_photo1 li:last-child{
+.latest_works_photo_album li{
+    width: 48%;
+    margin-bottom: 15px;
+}
+.latest_works_photo_album .branding{
+    width: 100%;
+    vertical-align: top;
+}
+.latest_works_photo_album li:last-child{
     margin-right: 0;
     margin-bottom: 0;
 }
-.icon_latest_works_photo{
-    margin-bottom: 100px;/*??????????*/
+.latest_works_photo_section{
+    position: relative;
 }
-
+.latest_works_photo_section h2{
+    font-family: 'montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+.latest_works_photo_section p{
+    font-family:'roboto_slab', serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+}
+.latest_works_photo_wrapper{
+    position: relative;
+}
+.latest_works_photo_wrapper h2{
+    margin-top: 50px;
+}
+.latest_works_photo_wrapper p{
+    margin-top: 5px;
+}
+.latest_works_button_center{
+    color: red;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family:'roboto_slab', serif;
+    font-size: 14px;
+    background: #fff;
+    border: 0;
+    color: #d16c5f;
+    margin-top: 15px;
+}
+.latest_works_dark{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background:rgba(192,48,28,0.7);
+    display: none;
+    text-align: center;
+}
+.latest_works_photo_album li:hover .latest_works_dark{
+    display: block;
+}
+.latest_works_photo_section{
+    margin-bottom: 50px;
+}
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -363,8 +425,7 @@ main{
        font-size: 16px;
        padding: 16px 32px;
     }
-
-    /*---------------services-------------------*/
+    /*---------------services-------------*/
     .service_list{
         display: flex;
     }
@@ -389,8 +450,7 @@ main{
        height: 75px;
        line-height: 66px;
     }
-
-    /*----------------about us------------------*/
+    /*----------------about us------------*/
     .about_us_title p{
         font-size: 16px;
     }
@@ -412,6 +472,23 @@ main{
     }
     .about_us_photo span{
         font-size: 10px;
+    }
+    /*-------------latest_works----------*/
+    .latest_works_menu a{
+        font-size: 16px;
+    }
+    .latest_works_title{
+        margin-bottom: 50px;
+    }
+    .latest_works_photo_wrapper h2{
+        margin-top: 90px;
+    }
+    .latest_works_button_center{
+        margin-top: 25px;
+        padding: 8px 17px;
+    }
+    .latest_works_photo_wrapper p{
+        margin-top: 15px;
     }
 }
 @media screen and (min-width: 992px){
@@ -445,7 +522,7 @@ main{
        padding: 20px 40px;
     }
 
-    /*---------------SERVICES-------------------*/
+    /*---------------SERVICES------------*/
     .main_services h2{
         margin-bottom: 30px;
         font-size: 20px;
@@ -475,8 +552,7 @@ main{
         height: 85px;
         line-height: 78px;
     }
-
-    /*---------------about us-------------------*/
+    /*---------------about us----------*/
     .main_section_about_us{
         height: 850px;
     }
@@ -530,6 +606,31 @@ main{
     }
     .about_us_photo span{
         font-size: 13px;
+    }
+     /*-------------latest_works----------*/
+    .latest_works_title h1{
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .latest_works_title{
+        margin-bottom: 70px;
+    }
+    .latest_works_menu a{
+        font-size: 16px;
+    }
+    .latest_works_photo_album li{
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    .latest_works_photo_wrapper h2{
+        margin-top: 95px;
+    }
+    .latest_works_button_center{
+        margin-top: 25px;
+        padding: 10px 20px;
+    }
+    .latest_works_photo_section{
+        margin-bottom: 100px;
     }
 }
 
