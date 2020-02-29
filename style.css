@@ -398,6 +398,119 @@ main{
 .latest_works_photo_section{
     margin-bottom: 50px;
 }
+
+/* ------------------ get in touch -----------------*/
+.main_section_our_work{
+    background-image: url(img/fone_project.png);
+    height: 370px;
+    background-repeat: no-repeat;/*?????*/
+}
+
+/* ------------------ blog -----------------*/
+.main_section_recent_blog{
+    height: 1080px;
+    /*background: blue;*/
+    /*margin-bottom: 70px;*/
+}
+.recent_blog{
+    text-align: center;
+    color: #555555;
+    margin-top: 100px;
+}
+.recent_blog h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.recent_blog p{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.icon_startup_img{
+    margin-right: 40px;
+}
+.startup_ideas_blok{
+    margin-top: 70px;
+    display: flex;
+}
+.startup_paragraph{
+}
+.startup_headers_date{
+    display: flex;
+}
+.startup_date a{
+    font-size: 24px;
+    color: #555555;
+    border-radius: 0px;
+    /*padding: 20px 20px; ?????????*/
+    border: 2px solid #555555;
+    margin-right: 30px;
+}
+.startup_headers{
+    text-align: left;
+}
+.startup_headers h1{
+    font-size: 16px;
+    color: red;
+    margin-bottom: 20px;
+}
+.startup_headers h3{
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+.startup_paragraph p{
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 35px;
+}
+.startup_red{
+    color: red;
+}
+.startup_paragraph span{
+    color: red;
+    font-size: 14px;
+}
+
+
+.user_interface_blok{
+    display: flex;
+    color: #555555;
+    margin-top: 80px;
+}
+.icon_user_img{
+    margin-right: 40px;
+}
+.user_headers_date{
+    display: flex;
+}
+.user_date a{
+    font-size: 24px;
+    color: #555555;
+    border-radius: 0px;
+    /*padding: 20px 20px; ?????????*/
+    border: 2px solid #555555;
+    margin-right: 30px;
+}
+.user_headers{
+    text-align: left;
+}
+.user_headers h1{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.user_headers h3{
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+.user_li{/*??????????????/*/
+    font-size: 14px;
+}
+.user_paragraph p{
+    font-size: 14px;
+    margin-top:35px;
+}
+
+
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
