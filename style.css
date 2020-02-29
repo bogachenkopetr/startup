@@ -300,9 +300,6 @@ main{
     background: #c0301c;
 }
 /*--------------latest works ----------*/
-.main_section_latest_works{
-    height: 1380px;
-}
 .latest_works_title{
     text-align: center;
     color: #555555;
@@ -310,12 +307,12 @@ main{
 }
 .latest_works_title h1{
     font-size: 18px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
+    font-weight:normal;
 }
 .latest_works_line{
     border: 0;
-    border-top: 2px solid #646464;
+    border-top: 1px solid #646464;
     width: 50px;
     margin: 0 auto;
 }
@@ -323,8 +320,7 @@ main{
     font-family:'roboto_slab', serif;
     color: #555555;
     font-size: 13px;
-    margin-top: 30px;
-    margin-right: 30px;
+    margin: 30px 30px 0 0;
 }
 .latest_works_menu{
     margin-top: 30px;
@@ -344,26 +340,25 @@ main{
 }
 .latest_works_photo_album li{
     width: 48%;
-    margin-bottom: 15px;
+    margin-bottom: 4%;
 }
 .latest_works_photo_album .branding{
     width: 100%;
     vertical-align: top;
 }
 .latest_works_photo_album li:last-child{
-    margin-right: 0;
     margin-bottom: 0;
 }
 .latest_works_photo_section{
     position: relative;
 }
-.latest_works_photo_section h2{
+.latest_works_dark h2{
     font-family: 'montserrat', sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: #fff;
 }
-.latest_works_photo_section p{
+.latest_works_dark p{
     font-family:'roboto_slab', serif;
     font-size: 12px;
     font-weight: normal;
@@ -615,12 +610,14 @@ main{
     .latest_works_title{
         margin-bottom: 70px;
     }
+    .latest_works_line{
+        border-top: 2px solid #646464;
+    }
     .latest_works_menu a{
         font-size: 16px;
     }
     .latest_works_photo_album li{
         width: 30%;
-        margin-bottom: 40px;
     }
     .latest_works_photo_wrapper h2{
         margin-top: 95px;
