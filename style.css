@@ -361,7 +361,6 @@ main{
 .latest_works_dark p{
     font-family:'roboto_slab', serif;
     font-size: 12px;
-    font-weight: normal;
     color: #fff;
 }
 .latest_works_photo_wrapper{
@@ -374,7 +373,6 @@ main{
     margin-top: 5px;
 }
 .latest_works_button_center{
-    color: red;
     display: inline-block;
     padding: 5px 10px;
     font-family:'roboto_slab', serif;
