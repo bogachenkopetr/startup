@@ -403,7 +403,7 @@ main{
 .main_section_our_work{
     background-image: url(img/parallax.png);
     background-repeat: no-repeat;
-    height:370px; /*не знаю как уменшить*/
+    background-size:cover;
 }
 .our_work_wrapper{
     text-align: center;
