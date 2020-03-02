@@ -405,8 +405,10 @@ main{
     background-repeat: no-repeat;
     height:370px; /*не знаю как уменшить*/
 }
-.our_work_dark h1{
+.our_work_wrapper{
     text-align: center;
+}
+.our_work_wrapper h1{
     color: #fff;
     margin: 100px 0 10px 0;
     font-family:'roboto_slab', serif;
@@ -418,29 +420,16 @@ main{
     padding: 10px 20px;
     font-family:'roboto_slab', serif;
     font-size: 12px;
-    background: #fff;
-    border: 0;
-    color: #d16c5f;
+    border: 2px solid #fff;
+    color: #fff;
     margin:50px 0 100px 0;
 }
-.main_section_our_work{
-    position: relative;
-}
-.our_work_dark{
-    position: absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    background:rgba(192,48,28,0.6);
-    display: none;
-    text-align: center;
-}
-.main_section_our_work:hover .our_work_dark{
-    display: block;
+.our_work_button_center:hover{
+    color: #d16c5f;
+    background: #fff;
 }
 /* --------------- blog -----------------*/
-.recent_blog_title h1{
+.recent_blog_title h2{
     text-align: center;
     color:#555555;
     font-size: 18px;
@@ -480,37 +469,28 @@ main{
     margin: 0 15px 10px 0;
 }
 .startup_date_18{
-    font-family: 'montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 12px;
+    font:bold 12px 'montserrat', sans-serif;
     color: #555555;
     text-align: center;
 }
-.startup_date_oct{
-    font-family: 'montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
+.startup_date_month{
+    font:bold 10px'montserrat', sans-serif;
     color: #555555;
 }
 .startup_ideas_title{
     text-align: left;
 }
-.startup_ideas_title h2{
-    font-size: 12px;
+.startup_ideas_title h3{
+    font:normal 12px 'montserrat', sans-serif;
     color: #555555;
-    font-weight: normal;
-    font-family: 'montserrat', sans-serif;
 }
-.startup_ideas_title h2:hover{
+.startup_ideas_title h3:hover{
     color: red;
 }
-.startup_ideas_title h3{
-    font-size: 10px;
+.startup_ideas_title h4{
+    font: italic 10px 'roboto_slab', serif;
     color: #555555;
     margin:5px 0 10px 0;
-    font-style: italic;
-    font-weight: normal;
-    font-family:'roboto_slab', serif;
 }
 .startup_ideas_list p{
     font-size: 12px;
@@ -547,34 +527,25 @@ main{
     margin: 0 15px 10px 0;
 }
 .user_date_18{
-    font-family: 'montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 12px;
+    font:bold 12px 'montserrat', sans-serif;
     color: #555555;
     text-align: center;
 }
-.user_date_oct{
-    font-family: 'montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
+.user_date_month{
+    font:bold 10px 'montserrat', sans-serif;
     color: #555555;
 }
 .user_interface_title h2{
-    font-size: 12px;
+    font:normal 12px 'montserrat', sans-serif;
     color: #555555;
-    font-weight: normal;
-    font-family: 'montserrat', sans-serif;
 }
 .user_interface_title h2:hover{
     color: red;
 }
 .user_interface_title h3{
-    font-size: 10px;
+    font:italic 10px 'roboto_slab', serif;
     color: #555555;
     margin:5px 0 10px 0;
-    font-style: italic;
-    font-weight: normal;
-    font-family:'roboto_slab', serif;
 }
 .user_red:hover{
     color: red;
@@ -684,7 +655,7 @@ main{
         margin-top: 15px;
     }
 /* --------------- get in touch -----------*/
-    .our_work_dark h1{
+    .our_work_wrapper h1{
         font-size: 26px;
     }
     .our_work_button_center{
@@ -839,7 +810,7 @@ main{
     .main_section_our_work{
         height: 370px;
     }
-    .our_work_dark h1{
+    .our_work_wrapper h1{
         font-size: 30px;
     }
     .our_work_button_center{
@@ -860,7 +831,7 @@ main{
     .icon_startup_img{
         margin-right: 40px;
     }
-    .recent_blog_title h1{
+    .recent_blog_title h2{
         font-size: 20px;
         margin: 100px 0 30px 0;
     }
@@ -880,13 +851,13 @@ main{
     .startup_date_18{
         font-size: 24px;
     }
-    .startup_date_oct{
+    .startup_date_month{
         font-size: 14px;
     }
-    .startup_ideas_title h2{
+    .startup_ideas_title h3{
         font-size: 16px;
     }
-    .startup_ideas_title h3{
+    .startup_ideas_title h4{
         font-size: 13px;
         margin:20px 0 40px 0;
     }
@@ -908,7 +879,7 @@ main{
     .user_date_18{
         font-size: 24px;
     }
-    .user_date_oct{
+    .user_date_month{
         font-size: 14px;
     }
     .user_interface_title h2{
