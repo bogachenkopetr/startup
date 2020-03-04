@@ -171,14 +171,14 @@ main{
 }
 
 /*------------about_us--------------------*/
-.main_section_about_us{ 
+.section_about_us{ 
     background: #f8f8f8;
     color: #646464;
 }
 .about_us_title {
     text-align: center;
 }
-.about_us_title h1{
+.about_us_title h2{
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -305,7 +305,7 @@ main{
     color: #555555;
     margin-bottom: 40px;
 }
-.latest_works_title h1{
+.latest_works_title h2{
     font-size: 18px;
     margin: 50px 0 30px 0;
     font-weight:normal;
@@ -352,10 +352,8 @@ main{
 .latest_works_photo_section{
     position: relative;
 }
-.latest_works_dark h2{
-    font-family: 'montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
+.latest_works_dark h3{
+    font:normal 18px 'montserrat', sans-serif;
     color: #fff;
 }
 .latest_works_dark p{
@@ -366,7 +364,7 @@ main{
 .latest_works_photo_wrapper{
     position: relative;
 }
-.latest_works_photo_wrapper h2{
+.latest_works_photo_wrapper h3{
     margin-top: 50px;
 }
 .latest_works_photo_wrapper p{
@@ -398,6 +396,119 @@ main{
 .latest_works_photo_section{
     margin-bottom: 50px;
 }
+
+/* ------------section_paralax -----------*/
+.section_paralax{
+    background-image: url(img/parallax.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.section_paralax p{
+    color: #fff;
+    font:normal 20px 'roboto_slab', serif;
+}
+.our_work_button_center{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family:'roboto_slab', serif;
+    font-size: 12px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top:25px;
+}
+.our_work_button_center:hover{
+    color: #d16c5f;
+    background: #fff;
+}
+/* --------------- blog -----------------*/
+.recent_blog_title h2{
+    text-align: center;
+    color:#555555;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 50px 0 30px 0;
+}
+.recent_blog_line{
+    border: 0;
+    border-top: 1px solid #646464;
+    width: 50px;
+    margin: 0 auto;
+}
+.recent_blog_title p{
+    text-align: center;
+    color:#555555;
+    font-size: 13px;
+    font-family:'roboto_slab', serif;
+    margin: 30px 0 40px 0;
+}
+.startup_blog{
+    display: flex;
+}
+.startup_blog img{
+    width: 40%;
+    height: 40%;
+}
+.startup_blog_header{
+    display: flex;
+}
+.startup_blog_date{
+    border-radius: 0px;
+    padding: 10px;
+    border: 1px solid #555555;
+    margin: 0 10px 5px 0;
+    text-align: center;
+}
+.date_number{
+    font:bold 12px 'montserrat', sans-serif;
+    color: #555555;
+    text-align: center;
+}
+.date_month{
+    font:bold 10px'montserrat', sans-serif;
+    color: #555555;
+}
+.name_author{
+    text-align: left;
+}
+.name_author a{
+    font:normal 12px 'montserrat', sans-serif;
+    color: #555555;
+    padding-bottom: 5px;
+}
+.name_author a:hover{
+    color: red;
+}
+.name_author p{
+    font: italic 10px 'roboto_slab', serif;
+    color: #555555;
+}
+.startup_blog_list p{
+    font-size: 12px;
+    color: #555555;
+    font-family:'roboto_slab', serif;
+    margin: 10px 0;
+}
+.startup_blog_list{
+    color: #555555;
+    font-size: 12px;
+    font-family:'roboto_slab', serif;
+    margin-left: 10px;
+}
+.startup_blog{
+    display: flex;
+    color: #555555;
+    margin-top: 40px;
+}
+.startup_blog_read{
+    font-size: 12px;
+    color: #555555;
+}
+.startup_blog_list a:hover{
+    color: red;
+}
+
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -419,9 +530,6 @@ main{
        padding: 16px 32px;
     }
     /*---------------services-------------*/
-    .service_list{
-        display: flex;
-    }
     .main_services h2{
         margin-bottom: 30px;
     }
@@ -473,7 +581,7 @@ main{
     .latest_works_title{
         margin-bottom: 50px;
     }
-    .latest_works_photo_wrapper h2{
+    .latest_works_photo_wrapper h3{
         margin-top: 90px;
     }
     .latest_works_button_center{
@@ -483,6 +591,14 @@ main{
     .latest_works_photo_wrapper p{
         margin-top: 15px;
     }
+/* --------- section_paralax -----------*/
+    .section_paralax p{
+        font-size: 26px;
+    }
+    .our_work_button_center{
+        padding: 13px 20px;
+        font-size: 14px;
+    }   
 }
 @media screen and (min-width: 992px){
     .top_section{
@@ -546,10 +662,7 @@ main{
         line-height: 78px;
     }
     /*---------------about us----------*/
-    .main_section_about_us{
-        height: 850px;
-    }
-    .about_us_title h1{
+    .about_us_title h2{
         margin-top: 100px;
         margin-bottom: 20px;
         font-size: 20px;
@@ -601,7 +714,7 @@ main{
         font-size: 13px;
     }
      /*-------------latest_works----------*/
-    .latest_works_title h1{
+    .latest_works_title h2{
         font-size: 20px;
         margin-top: 100px;
     }
@@ -617,7 +730,7 @@ main{
     .latest_works_photo_album li{
         width: 30%;
     }
-    .latest_works_photo_wrapper h2{
+    .latest_works_photo_wrapper h3{
         margin-top: 95px;
     }
     .latest_works_button_center{
@@ -626,6 +739,68 @@ main{
     }
     .latest_works_photo_section{
         margin-bottom: 100px;
+    }
+/* ----------  section_paralax -----------*/
+    .section_paralax p{
+        font-size: 30px;
+    }
+    .our_work_button_center{
+        padding: 15px 25px;
+        font-size: 18px;
+        margin:50px 0 0 0;
+    } 
+    .section_paralax{
+        padding: 100px 0 100px 0;
+    }
+/* --------------- blog -----------------*/ 
+    .section_recent_blog{
+        margin-bottom: 100px;
+    }
+    .startup_blog img{
+        width: 45%;
+    }
+    .recent_blog_title h2{
+        font-size: 20px;
+        margin: 100px 0 30px 0;
+    }
+    .recent_blog_line{
+        border-top: 2px solid #646464;
+        width: 50px;
+    }
+    .recent_blog_title p{
+        font-size: 16px;
+        margin: 30px 0 70px 0;
+    }
+    .startup_blog_date{
+        padding: 20px;
+        border: 2px solid #555555;
+        margin: 0 30px 20px 0;
+    }
+    .date_number{
+        font-size: 24px;
+    }
+    .date_month{
+        font-size: 14px;
+    }
+    .name_author h3 {
+        margin-bottom: 20px;
+    }
+    .name_author a {
+        font-size: 16px;
+    }
+    .name_author p{
+        font-size: 13px;
+    }
+    .startup_blog_list p{
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+    .startup_blog_list{
+        font-size: 14px;
+        margin-left: 40px;
+    }
+    .startup_blog_read{
+        font-size: 16px;
     }
 }
 
