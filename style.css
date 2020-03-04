@@ -171,14 +171,14 @@ main{
 }
 
 /*------------about_us--------------------*/
-.main_section_about_us{ 
+.section_about_us{ 
     background: #f8f8f8;
     color: #646464;
 }
 .about_us_title {
     text-align: center;
 }
-.about_us_title h1{
+.about_us_title h2{
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -305,7 +305,7 @@ main{
     color: #555555;
     margin-bottom: 40px;
 }
-.latest_works_title h1{
+.latest_works_title h2{
     font-size: 18px;
     margin: 50px 0 30px 0;
     font-weight:normal;
@@ -352,10 +352,8 @@ main{
 .latest_works_photo_section{
     position: relative;
 }
-.latest_works_dark h2{
-    font-family: 'montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
+.latest_works_dark h3{
+    font:normal 18px 'montserrat', sans-serif;
     color: #fff;
 }
 .latest_works_dark p{
@@ -366,7 +364,7 @@ main{
 .latest_works_photo_wrapper{
     position: relative;
 }
-.latest_works_photo_wrapper h2{
+.latest_works_photo_wrapper h3{
     margin-top: 50px;
 }
 .latest_works_photo_wrapper p{
@@ -399,21 +397,17 @@ main{
     margin-bottom: 50px;
 }
 
-/* --------------- get in touch -----------*/
-.main_section_our_work{
+/* ------------section_paralax -----------*/
+.section_paralax{
     background-image: url(img/parallax.png);
     background-repeat: no-repeat;
     background-size:cover;
-}
-.our_work_wrapper{
     text-align: center;
+    padding: 50px 0 50px 0;
 }
-.our_work_wrapper h1{
+.section_paralax p{
     color: #fff;
-    margin: 100px 0 10px 0;
-    font-family:'roboto_slab', serif;
-    font-size: 20px;
-    font-weight: normal;
+    font:normal 20px 'roboto_slab', serif;
 }
 .our_work_button_center{
     display: inline-block;
@@ -422,7 +416,7 @@ main{
     font-size: 12px;
     border: 2px solid #fff;
     color: #fff;
-    margin:50px 0 100px 0;
+    margin-top:25px;
 }
 .our_work_button_center:hover{
     color: #d16c5f;
@@ -449,123 +443,69 @@ main{
     font-family:'roboto_slab', serif;
     margin: 30px 0 40px 0;
 }
-.icon_startup_img{
-    margin-right: 10px;
-}
-.startup_ideas_wrapper{
+.startup_blog{
     display: flex;
 }
-.startup_ideas_wrapper img{
+.startup_blog img{
     width: 40%;
     height: 40%;
 }
-.startup_ideas_date{
+.startup_blog_header{
     display: flex;
 }
-.startup_date{
+.startup_blog_date{
     border-radius: 0px;
     padding: 10px;
     border: 1px solid #555555;
-    margin: 0 15px 10px 0;
+    margin: 0 10px 5px 0;
+    text-align: center;
 }
-.startup_date_18{
+.date_number{
     font:bold 12px 'montserrat', sans-serif;
     color: #555555;
     text-align: center;
 }
-.startup_date_month{
+.date_month{
     font:bold 10px'montserrat', sans-serif;
     color: #555555;
 }
-.startup_ideas_title{
+.name_author{
     text-align: left;
 }
-.startup_ideas_title h3{
+.name_author h3{
     font:normal 12px 'montserrat', sans-serif;
     color: #555555;
+    padding-bottom: 5px;
 }
-.startup_ideas_title h3:hover{
-    color: red;
-}
-.startup_ideas_title h4{
+.name_author a{
     font: italic 10px 'roboto_slab', serif;
     color: #555555;
-    margin:5px 0 10px 0;
 }
-.startup_ideas_list p{
+.name_author a:hover{
+    color: red;
+}
+.startup_blog_list p{
     font-size: 12px;
     color: #555555;
     font-family:'roboto_slab', serif;
     margin-bottom: 10px;
 }
-.startup_red{
-    color: red;
-}
-.startup_ideas_list span{
+.startup_blog_list{
     color: #555555;
     font-size: 12px;
     font-family:'roboto_slab', serif;
+    margin-left: 10px;
 }
-.startup_ideas_list span:hover{
-    color: red;
-}
-.user_interface_wrapper{
+.startup_blog{
     display: flex;
     color: #555555;
     margin-top: 40px;
 }
-.icon_user_img{
-    margin-right: 10px;
-}
-.user_interface_date{
-    display: flex;
-}
-.user_date{
-    border-radius: 0px;
-    padding: 10px;
-    border: 1px solid #555555;
-    margin: 0 15px 10px 0;
-}
-.user_date_18{
-    font:bold 12px 'montserrat', sans-serif;
-    color: #555555;
-    text-align: center;
-}
-.user_date_month{
-    font:bold 10px 'montserrat', sans-serif;
-    color: #555555;
-}
-.user_interface_title h2{
-    font:normal 12px 'montserrat', sans-serif;
-    color: #555555;
-}
-.user_interface_title h2:hover{
-    color: red;
-}
-.user_interface_title h3{
-    font:italic 10px 'roboto_slab', serif;
-    color: #555555;
-    margin:5px 0 10px 0;
-}
-.user_red:hover{
-    color: red;
-}
-.user_interface_wrapper img{
-    height: 40%;
-    width: 40%;
-}
-.user_interface_list p{
+.startup_blog_read{
     font-size: 12px;
     color: #555555;
-    font-family:'roboto_slab', serif;
-    margin-bottom: 10px;
 }
-.user_interface_list span{
-    color: #555555;
-    font-size: 12px;
-    font-family:'roboto_slab', serif;
-}
-.user_interface_list span:hover{
+.startup_blog_list a:hover{
     color: red;
 }
 
@@ -590,9 +530,6 @@ main{
        padding: 16px 32px;
     }
     /*---------------services-------------*/
-    .service_list{
-        display: flex;
-    }
     .main_services h2{
         margin-bottom: 30px;
     }
@@ -644,7 +581,7 @@ main{
     .latest_works_title{
         margin-bottom: 50px;
     }
-    .latest_works_photo_wrapper h2{
+    .latest_works_photo_wrapper h3{
         margin-top: 90px;
     }
     .latest_works_button_center{
@@ -654,8 +591,8 @@ main{
     .latest_works_photo_wrapper p{
         margin-top: 15px;
     }
-/* --------------- get in touch -----------*/
-    .our_work_wrapper h1{
+/* --------- section_paralax -----------*/
+    .section_paralax p{
         font-size: 26px;
     }
     .our_work_button_center{
@@ -725,10 +662,7 @@ main{
         line-height: 78px;
     }
     /*---------------about us----------*/
-    .main_section_about_us{
-        height: 850px;
-    }
-    .about_us_title h1{
+    .about_us_title h2{
         margin-top: 100px;
         margin-bottom: 20px;
         font-size: 20px;
@@ -780,7 +714,7 @@ main{
         font-size: 13px;
     }
      /*-------------latest_works----------*/
-    .latest_works_title h1{
+    .latest_works_title h2{
         font-size: 20px;
         margin-top: 100px;
     }
@@ -796,7 +730,7 @@ main{
     .latest_works_photo_album li{
         width: 30%;
     }
-    .latest_works_photo_wrapper h2{
+    .latest_works_photo_wrapper h3{
         margin-top: 95px;
     }
     .latest_works_button_center{
@@ -806,30 +740,24 @@ main{
     .latest_works_photo_section{
         margin-bottom: 100px;
     }
-/* --------------- get in touch -----------*/
-    .main_section_our_work{
-        height: 370px;
-    }
-    .our_work_wrapper h1{
+/* ----------  section_paralax -----------*/
+    .section_paralax p{
         font-size: 30px;
     }
     .our_work_button_center{
         padding: 15px 25px;
         font-size: 18px;
-        margin:50px 0 100px 0;
-    }  
+        margin:50px 0 0 0;
+    } 
+    .section_paralax{
+        padding: 100px 0 100px 0;
+    }
 /* --------------- blog -----------------*/ 
-    .main_section_recent_blog{
-        height: 1080px;
+    .section_recent_blog{
+        margin-bottom: 100px;
     }
-    .startup_ideas_wrapper img{
+    .startup_blog img{
         width: 45%;
-    }
-    .user_interface_wrapper img{
-        width: 45%;
-    }
-    .icon_startup_img{
-        margin-right: 40px;
     }
     .recent_blog_title h2{
         font-size: 20px;
@@ -843,63 +771,35 @@ main{
         font-size: 16px;
         margin: 30px 0 70px 0;
     }
-    .startup_date{
+    .startup_blog_date{
         padding: 20px;
         border: 2px solid #555555;
         margin: 0 30px 20px 0;
     }
-    .startup_date_18{
+    .date_number{
         font-size: 24px;
     }
-    .startup_date_month{
+    .date_month{
         font-size: 14px;
     }
-    .startup_ideas_title h3{
+    .name_author h3{
         font-size: 16px;
+        padding-bottom: 20px;
     }
-    .startup_ideas_title h4{
+    .name_author a{
         font-size: 13px;
-        margin:20px 0 40px 0;
     }
-    .startup_ideas_list p{
+    .startup_blog_list p{
         font-size: 14px;
         margin-bottom: 35px;
     }
-    .startup_ideas_list span{
+    .startup_blog_list{
         font-size: 14px;
+        margin-left: 40px;
     }
-    .icon_user_img{
-        margin-right: 40px;
-    }
-    .user_date{
-        padding: 20px 20px;
-        border: 2px solid #555555;
-        margin:0 30px 20px 0;
-    }
-    .user_date_18{
-        font-size: 24px;
-    }
-    .user_date_month{
-        font-size: 14px;
-    }
-    .user_interface_title h2{
+    .startup_blog_read{
         font-size: 16px;
     }
-    .user_interface_title h3{
-        font-size: 13px;
-        margin:20px 0 40px 0;
-    }
-    .user_interface_list p{
-       font-size: 14px;
-       margin-bottom: 35px;
-    }
-    .user_interface_list span{
-        font-size: 14px;
-    }
-    .user_interface_wrapper{
-        margin-top: 80px;
-    }
-    
 }
 
 
