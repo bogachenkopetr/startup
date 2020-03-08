@@ -669,6 +669,41 @@ main{
     font:normal 10px 'roboto_slab', serif;
 }
 
+
+/*------------footer -----------*/
+footer{
+    background: #c0301c;
+    height: 315px;
+    margin:0 auto;
+}
+.footer_logo{
+   width: 40px;
+   height: 40px;
+   border: 2px solid #e2e2e2;
+   border-radius: 100%;
+   display: inline-block;
+   text-align: center;
+   line-height: 35px;
+   margin-right: 15px;
+   margin-top: 100px;
+    margin-bottom: 30px;
+}
+.footer_logo img{
+   vertical-align: middle;
+}
+.section_footer_logo{
+    text-align: center;
+}
+.section_footer_line{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer_line{
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
