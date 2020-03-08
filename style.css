@@ -537,7 +537,7 @@ main{
     position: relative;
 }
 .clients_reviews ul{
-    height: 150px;
+    height: 130px;
 }
 .clients_reviews li{
     position: absolute;
@@ -558,7 +558,7 @@ main{
 }
 .clients_reviews_switch{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .clients_reviews_switch button{
     width: 15px;
@@ -570,7 +570,6 @@ main{
 .clients_reviews_switch button:hover{
     background: red;
 }
-
 
  /* --------- section_contact -----------*/
 
@@ -595,10 +594,13 @@ main{
 }
 .contact_wrapper{
     display: flex;
-    margin-bottom:50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
 }
 .contact_wrapper_address{
-    margin-right: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 37%;
 }
 .address_list{
     display: flex;
@@ -619,20 +621,20 @@ main{
 .address_list:last-child{
     margin-bottom: 0;
 }
+.contact_wrapper_form {
+    width: 63%;
+}
 .contact_wrapper_form input{
     width: 48%;
     height: 30px;
     border: 1px solid #555555;
     padding: 5px 10px;
-    margin-right:4%;
     font:normal 10px 'roboto_slab', serif;
-}
-.form_input input:last-child{
-    margin-right: 0;
 }
 .form_input{
     display: flex;
     margin-bottom: 12px;
+    justify-content: space-between;
 }
 .contact_wrapper_form textarea{
     width: 100%;
@@ -767,10 +769,15 @@ main{
         font-size:14px;
     }
     .clients_reviews .reviewer{
-        font-size:15px;  
+        font-size:15px;
     }
     /* --------- section_contact -----------*/
-    
+    .contact_wrapper_address {
+        width: 25%;
+    }
+    .contact_wrapper_form {
+        width: 75%;
+    }
     .contact_wrapper_form input{
         height: 30px;
     }
@@ -1005,25 +1012,27 @@ main{
     .clients_brands li{
         margin-right: 60px;
     }
+    .clients_reviews ul {
+        height: 150px;
+    }
     .clients_reviews p{
         font-size:18px;
     }
     .clients_reviews .reviewer{
-        font:normal 20px 'roboto_slab', serif;  
-        margin: 40px 0 40px 0;
+        font:normal 20px 'roboto_slab', serif;
+        margin: 40px 0;
     }
     .clients_reviews_switch{
-        margin-bottom:100px;
+        margin-bottom: 100px;
     }
 /* --------- section_contact -----------*/
     
-    .contact_wrapper_address{
-        margin-right: 165px;
+    .contact_wrapper_form {
+        max-width: 730px;
     }
     .contact_wrapper_form input{
         height: 44px;
         padding: 14px 20px;
-        margin-right: 30px;
         font-size:12px;
     }
     .form_input{
