@@ -508,6 +508,166 @@ main{
 .startup_blog_list a:hover{
     color: red;
 }
+.section_recent_blog{
+        margin-bottom: 50px;
+    }
+
+/* ------- section_clients----------*/
+
+.section_clients{
+    background: #f8f8f8;
+}
+.clients_brands{
+    margin: 50px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.clients_brands img{
+    width: 70%;
+}
+.clients_brands li{
+    text-align: center;
+    margin-right: 5px;
+}
+.clients_brands li:last-child{
+    margin-right: 0;
+}
+.clients_reviews{
+    position: relative;
+}
+.clients_reviews ul{
+    height: 130px;
+}
+.clients_reviews li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    text-align: center;
+    color: #555; 
+    font:italic 12px 'roboto_slab', serif;
+}
+.clients_reviews li.review-active{
+    display: block;
+}
+.clients_reviews .reviewer{
+    font-size:13px; 
+    margin: 20px 0 20px;
+}
+.clients_reviews_switch{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.clients_reviews_switch button{
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background: #dddddd;
+    border-radius: 100%;
+}
+.clients_reviews_switch button:hover{
+    background: red;
+}
+
+ /* --------- section_contact -----------*/
+
+.contact_title{
+    text-align: center;
+    color:#555555;
+}
+.contact_title h2{
+    margin:50px 0 30px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+.contact_line{
+    border: 0;
+    border-top: 1px solid #646464;
+    width: 50px;
+    margin: 0 auto;
+}
+.contact_title p{
+    margin:30px 0 40px 0;
+    font:normal 13px 'roboto_slab', serif;
+}
+.contact_wrapper{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.contact_wrapper_address{
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 37%;
+}
+.address_list{
+    display: flex;
+    color: #555555;
+    margin-bottom: 15px;
+}
+.address_text h3{
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.address_picture img{
+    margin-right: 5px;
+}
+.address_text p{
+    font:normal 10px 'roboto_slab', serif;
+}
+.address_list:last-child{
+    margin-bottom: 0;
+}
+.contact_wrapper_form {
+    width: 63%;
+}
+.contact_wrapper_form input{
+    width: 48%;
+    height: 30px;
+    border: 1px solid #555555;
+    padding: 5px 10px;
+    font:normal 10px 'roboto_slab', serif;
+}
+.form_input{
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+.contact_wrapper_form textarea{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #555555;
+    padding: 5px 10px;
+    font:normal 10px 'roboto_slab', serif;
+    resize: none;
+}
+.form_submit{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #555555;
+}
+.form_submit input{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #555555;
+    padding: 2px 2px;
+    margin-right: 10px;
+    color: #555555;
+    background: #fff;
+    font:normal 8px 'roboto_slab', serif;
+}
+.form_submit span{
+    font-size: 10px;
+    color: #c0301c;
+    margin-right: 3px;
+}
+.form_submit p{
+    font:normal 10px 'roboto_slab', serif;
+}
 
 @media screen and (min-width: 768px){
     .top-section {
@@ -592,13 +752,47 @@ main{
         margin-top: 15px;
     }
 /* --------- section_paralax -----------*/
+    
     .section_paralax p{
         font-size: 26px;
     }
     .our_work_button_center{
         padding: 13px 20px;
         font-size: 14px;
-    }   
+    } 
+/* --------- section_clients -----------*/
+    
+    .clients_brands img{
+        width: 80%;
+    }
+    .clients_reviews p{
+        font-size:14px;
+    }
+    .clients_reviews .reviewer{
+        font-size:15px;
+    }
+    /* --------- section_contact -----------*/
+    .contact_wrapper_address {
+        width: 25%;
+    }
+    .contact_wrapper_form {
+        width: 75%;
+    }
+    .contact_wrapper_form input{
+        height: 30px;
+    }
+    .contact_wrapper_form textarea{
+        height: 80px;
+    }
+    .form_submit input{
+        width: 125px;
+        height: 30px;
+        padding: 5px 5px;
+        font-size:10px;
+    }
+    .address_list{
+        margin-bottom:20px;
+    }
 }
 @media screen and (min-width: 992px){
     .top_section{
@@ -632,6 +826,7 @@ main{
     }
 
     /*---------------SERVICES------------*/
+    
     .main_services h2{
         margin-bottom: 30px;
         font-size: 20px;
@@ -662,6 +857,7 @@ main{
         line-height: 78px;
     }
     /*---------------about us----------*/
+    
     .about_us_title h2{
         margin-top: 100px;
         margin-bottom: 20px;
@@ -714,6 +910,7 @@ main{
         font-size: 13px;
     }
      /*-------------latest_works----------*/
+    
     .latest_works_title h2{
         font-size: 20px;
         margin-top: 100px;
@@ -741,6 +938,7 @@ main{
         margin-bottom: 100px;
     }
 /* ----------  section_paralax -----------*/
+    
     .section_paralax p{
         font-size: 30px;
     }
@@ -753,6 +951,7 @@ main{
         padding: 100px 0 100px 0;
     }
 /* --------------- blog -----------------*/ 
+    
     .section_recent_blog{
         margin-bottom: 100px;
     }
@@ -802,6 +1001,89 @@ main{
     .startup_blog_read{
         font-size: 16px;
     }
+/* ---------section_clients -----------*/
+    
+    .clients_brands{
+        margin: 100px 0 70px 0;
+    }
+    .clients_brands img{
+        width: 100%;
+    }
+    .clients_brands li{
+        margin-right: 60px;
+    }
+    .clients_reviews ul {
+        height: 150px;
+    }
+    .clients_reviews p{
+        font-size:18px;
+    }
+    .clients_reviews .reviewer{
+        font:normal 20px 'roboto_slab', serif;
+        margin: 40px 0;
+    }
+    .clients_reviews_switch{
+        margin-bottom: 100px;
+    }
+/* --------- section_contact -----------*/
+    
+    .contact_wrapper_form {
+        max-width: 730px;
+    }
+    .contact_wrapper_form input{
+        height: 44px;
+        padding: 14px 20px;
+        font-size:12px;
+    }
+    .form_input{
+        margin-bottom: 20px;
+    }
+    .contact_wrapper_form textarea{
+        height: 105px;
+        padding: 20px 20px;
+        font-size: 12px;
+    }
+    .form_submit input{
+        width: 170px;
+        height: 44px;
+        padding: 15px 35px;
+        margin-right: 40px;
+        font-size:12px;
+    }
+    .form_submit{
+        margin-top: 20px;
+    }
+    .form_submit p{
+        font-size:12px;
+    }
+    .contact_title h2{
+        margin:100px 0 30px 0;
+        font-size: 20px;
+    }
+    .contact_line{
+        border-top: 2px solid #646464;
+    }
+    .contact_title p{
+        margin:30px 0 70px 0;
+        font-size: 16px;
+    }
+    .contact_wrapper{
+        margin-bottom:100px;
+    }
+    .address_text h3{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .address_picture img{
+        margin-right: 10px;
+    }
+    .address_text p{
+        font-size: 12px;
+    }
+    .address_list{
+        margin-bottom: 40px;
+    }
+
 }
 
 
