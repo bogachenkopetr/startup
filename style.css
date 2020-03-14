@@ -78,8 +78,33 @@ li{
     background: none;
     border: 0;
 }
-.menu_topnav{
+.burger_close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+    font-size: 42px;
+    border-radius: none;
+    background: none;
+    border: 0;
     display: none;
+}
+
+.menu_topnav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    display: none;
+}
+.menu_topnav li{
+    padding: 10px 0;
+    border-bottom: 1px solid red;
+}
+.menu_topnav a{
+    color: red;
 }
 .top_welcome{
     text-align: center;
@@ -103,6 +128,7 @@ li{
     border: 2px solid #fff;
 }
 /*----------------SERVICES------------------*/
+
 main{
     display: flex;
     flex-direction: column;
@@ -669,6 +695,42 @@ main{
     font:normal 10px 'roboto_slab', serif;
 }
 
+/*------------footer -----------*/
+.section_footer{
+    background: #c0301c;
+    margin:0 auto;
+}
+.footer-social-media-links a{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 100%;
+    display: inline-block;
+    text-align:center;
+    line-height: 15px;
+    margin-right: 7px;
+}
+.footer-social-media-links{
+    text-align: center;
+    padding:50px 0 20px 0;
+}
+.footer-social-media-links img{
+    vertical-align: middle;
+    width: 60%;
+}
+.footer_line{
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 30px;
+    margin: 0 auto;
+}
+.section_footer p{
+    text-align: center;
+    color: #fff;
+    font:normal 10px 'roboto_slab', serif;
+    padding:20px 0 50px 0;
+}
+
 @media screen and (min-width: 768px){
     .top-section {
         max-height: 770px;
@@ -803,6 +865,9 @@ main{
     }
     .burger_menu{
        display: none;
+    }
+    .burger_close{
+        display: none;
     }
     .menu_topnav{
         display: flex;
@@ -1083,7 +1148,27 @@ main{
     .address_list{
         margin-bottom: 40px;
     }
-
+    
+/*------------footer -----------*/
+    .footer-social-media-links{
+        padding:100px 0 30px 0;
+    }
+    .footer-social-media-links a{
+        width: 35px;
+        height: 35px;
+        border: 2px solid #e2e2e2;
+        line-height: 28px;
+        margin-right: 15px;
+    }
+    .footer_line{
+        border-top: 2px solid #fff;
+        width: 50px;
+    }
+    .section_footer p{
+        padding:30px 0 100px 0;
+        font-size:12px;
+    }
+    
 }
 
 
