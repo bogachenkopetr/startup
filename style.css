@@ -594,7 +594,8 @@ main{
     background: #dddddd;
     border-radius: 100%;
 }
-.clients_reviews_switch button:hover{
+.clients_reviews_switch button:hover,
+.clients_reviews_switch button.active{
     background: red;
 }
 
