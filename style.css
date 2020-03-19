@@ -239,6 +239,7 @@ main{
 }
 .about_us_photo_wrapper{
     position: relative;
+    overflow: hidden;
 }
 .button_left, 
 .button_right{
@@ -266,16 +267,19 @@ main{
     background: #c0301c;
 }
 .about_us_photo{
-    display: flex;
-    justify-content: center;
+    display:inline-block;
+    text-align: left;
     margin-top: 40px;
     margin-bottom: 50px;
+    white-space: nowrap;
 }
 .about_us_photo li{
     margin-right: 2%;
     font-size: 10px;
     width: 23.5%;
+    flex-grow: 0;/*???????*/
     text-align: center;
+    display: inline-block;
 }
 .about_us_photo li:last-child{
     margin-right: 0;
@@ -873,8 +877,9 @@ main{
     }
     .menu_topnav{
         display: flex;
-        justify-content:center;
-        margin-left: 240px;
+        justify-content:flex-end;
+        width: 80%;
+        margin-right:20px;
         margin-top: 40px;
         background: none;
         padding: 0;
