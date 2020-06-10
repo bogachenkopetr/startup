@@ -78,8 +78,34 @@ li{
     background: none;
     border: 0;
 }
-.menu_topnav{
+.burger_close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    color: #c0301c;
+    font-size: 42px;
+    border-radius: none;
+    background: none;
+    border: 0;
     display: none;
+}
+
+.menu_topnav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    display: none;
+}
+.menu_topnav li{
+    padding: 10px 0;
+    border-bottom: 1px solid #c0301c;
+}
+.menu_topnav a{
+    color: #c0301c;
 }
 .top_welcome{
     text-align: center;
@@ -102,7 +128,7 @@ li{
     padding: 14px 30px;
     border: 2px solid #fff;
 }
-/*-------------SERVICES---------*/
+/*----------------SERVICES------------------*/
 main{
     display: flex;
     flex-direction: column;
@@ -212,6 +238,7 @@ main{
 }
 .about_us_photo_wrapper{
     position: relative;
+    overflow: hidden;
 }
 .button_left, 
 .button_right{
@@ -239,16 +266,19 @@ main{
     background: #c0301c;
 }
 .about_us_photo{
-    display: flex;
-    justify-content: center;
+    display:inline-block;
+    text-align: left;
     margin-top: 40px;
     margin-bottom: 50px;
+    white-space: nowrap;
 }
 .about_us_photo li{
     margin-right: 2%;
     font-size: 10px;
     width: 23.5%;
+    flex-grow: 0;/*???????*/
     text-align: center;
+    display: inline-block;
 }
 .about_us_photo li:last-child{
     margin-right: 0;
@@ -567,7 +597,8 @@ main{
     background: #dddddd;
     border-radius: 100%;
 }
-.clients_reviews_switch button:hover{
+.clients_reviews_switch button:hover,
+.clients_reviews_switch button.active{
     background: red;
 }
 
@@ -674,7 +705,7 @@ main{
     background: #c0301c;
     margin:0 auto;
 }
-.footer_logo a{
+.footer-social-media-links a{
     width: 20px;
     height: 20px;
     border: 1px solid #e2e2e2;
@@ -684,11 +715,11 @@ main{
     line-height: 15px;
     margin-right: 7px;
 }
-.footer_logo{
+.footer-social-media-links{
     text-align: center;
     padding:50px 0 20px 0;
 }
-.footer_logo img{
+.footer-social-media-links img{
     vertical-align: middle;
     width: 60%;
 }
@@ -842,14 +873,26 @@ main{
     .burger_menu{
        display: none;
     }
+    .burger_close{
+        display: none;
+    }
     .menu_topnav{
         display: flex;
+        justify-content:flex-end;
+        width: 80%;
+        margin-right:20px;
         margin-top: 40px;
+        background: none;
+        padding: 0;
     }
     .menu_topnav li{
         font-size: 14px;
         margin-left: 30px;
         color: #fff;
+        border-bottom: none;
+    }
+    .menu_topnav a{
+      color: #fff;
     }
     .top_welcome h1{
        margin-top: 250px;
@@ -1122,10 +1165,10 @@ main{
         margin-bottom: 40px;
     }
 /*------------footer -----------*/
-    .footer_logo{
+    .footer-social-media-links{
         padding:100px 0 30px 0;
     }
-    .footer_logo a{
+    .footer-social-media-links a{
         width: 35px;
         height: 35px;
         border: 2px solid #e2e2e2;
@@ -1140,21 +1183,4 @@ main{
         padding:30px 0 100px 0;
         font-size:12px;
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
