@@ -129,7 +129,6 @@ li{
     border: 2px solid #fff;
 }
 /*----------------SERVICES------------------*/
-
 main{
     display: flex;
     flex-direction: column;
@@ -197,7 +196,7 @@ main{
    vertical-align: middle;
 }
 
-/*------------about_us--------------------*/
+/*------------about_us-----------*/
 .section_about_us{ 
     background: #f8f8f8;
     color: #646464;
@@ -330,7 +329,7 @@ main{
 .media_contacts a:hover{
     background: #c0301c;
 }
-/*--------------latest works ----------*/
+/*-----------latest works -------*/
 .latest_works_title{
     text-align: center;
     color: #555555;
@@ -428,7 +427,7 @@ main{
     margin-bottom: 50px;
 }
 
-/* ------------section_paralax -----------*/
+/* ----------section_paralax -----*/
 .section_paralax{
     background-image: url(img/parallax.png);
     background-repeat: no-repeat;
@@ -453,7 +452,7 @@ main{
     color: #d16c5f;
     background: #fff;
 }
-/* --------------- blog -----------------*/
+/* ------------- blog -----------*/
 .recent_blog_title h2{
     text-align: center;
     color:#555555;
@@ -543,7 +542,7 @@ main{
         margin-bottom: 50px;
     }
 
-/* ------- section_clients----------*/
+/* ------- section_clients--------*/
 
 .section_clients{
     background: #f8f8f8;
@@ -603,7 +602,7 @@ main{
     background: red;
 }
 
- /* --------- section_contact -----------*/
+ /* -------- section_contact -----*/
 
 .contact_title{
     text-align: center;
@@ -757,7 +756,7 @@ main{
        font-size: 16px;
        padding: 16px 32px;
     }
-    /*---------------services-------------*/
+    /*---------------services---------*/
     .main_services h2{
         margin-bottom: 30px;
     }
@@ -779,7 +778,7 @@ main{
        height: 75px;
        line-height: 66px;
     }
-    /*----------------about us------------*/
+    /*----------------about us--------*/
     .about_us_title p{
         font-size: 16px;
     }
@@ -802,7 +801,7 @@ main{
     .about_us_photo span{
         font-size: 10px;
     }
-    /*-------------latest_works----------*/
+    /*-------------latest_works----*/
     .latest_works_menu a{
         font-size: 16px;
     }
@@ -819,7 +818,7 @@ main{
     .latest_works_photo_wrapper p{
         margin-top: 15px;
     }
-/* --------- section_paralax -----------*/
+/*------- section_paralax ---------*/
     
     .section_paralax p{
         font-size: 26px;
@@ -828,7 +827,7 @@ main{
         padding: 13px 20px;
         font-size: 14px;
     } 
-/* --------- section_clients -----------*/
+/* ------- section_clients -------*/
     
     .clients_brands img{
         width: 80%;
@@ -839,7 +838,7 @@ main{
     .clients_reviews .reviewer{
         font-size:15px;
     }
-    /* --------- section_contact -----------*/
+    /* ------- section_contact ---*/
     .contact_wrapper_address {
         width: 25%;
     }
@@ -861,6 +860,8 @@ main{
     .address_list{
         margin-bottom:20px;
     }
+/*----------footer ---------*/
+    
 }
 @media screen and (min-width: 992px){
     .top_section{
@@ -891,8 +892,8 @@ main{
         border-bottom: none;
     }
     .menu_topnav a{
-    color: #fff;
-}
+      color: #fff;
+    }
     .top_welcome h1{
        margin-top: 250px;
        font-size: 48px;
@@ -1163,7 +1164,6 @@ main{
     .address_list{
         margin-bottom: 40px;
     }
-    
 /*------------footer -----------*/
     .footer-social-media-links{
         padding:100px 0 30px 0;
@@ -1183,21 +1183,4 @@ main{
         padding:30px 0 100px 0;
         font-size:12px;
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
