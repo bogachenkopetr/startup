@@ -21,29 +21,26 @@ $(document).ready(function(){
         })
     });
     
-    /*about_us carousel*/
-    const carousel = $('.about_us_photo');
-    const carouselItems = $('.about_us_photo li');
-    const buttonNext = $('.button_right');
-    const buttonBack = $('.button_left');
-    const displayCount = 1; // колличество изображений на которые сдвигается карусель
-    let position = 0;// это начальная позиц элемента кар-ли ul
-    
-    buttonNext.click(function(){
-        let width = $(carouselItems[0]).width() + parseFloat($(carouselItems[0]).css('margin-right')); // ширина картинки + margin right
-        console.log(width);
-        position = position - width;
-        const positionMax = - width * (carouselItems.length-displayCount); 
-        position = Math.max(position, positionMax);// позволяет в карусели прекратить смещение, когда закончились фото
-        carousel.css('margin-left', position + 'px');
-    })
-    buttonBack.click(function(){
-        let width = $(carouselItems[0]).width() + parseFloat($(carouselItems[0]).css('margin-right')); // ширина картинки + margin right
-        console.log(width);
-        position = position + width;
-        position = Math.min(position, 0);// позволяет в карусели прекратить смещение, когда закончились фото
-        carousel.css('margin-left', position + 'px');
-    })
+    $(".owl-carousel").owlCarousel({
+        loop:false,
+        margin:10,
+        responsiveClass:true,
+        navClass: ["button_left", "button_right"],
+        responsive:{
+            0:{
+                items: 2,
+                nav: true
+            },
+            768: {
+              items: 3,
+              nav: true
+            },
+            992: {
+              items: 4,
+              nav: true
+            }
+        }
+    });
 });
 
 
