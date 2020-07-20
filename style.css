@@ -243,15 +243,15 @@ main{
 .button_left, 
 .button_right{
     position: absolute;
-    height: 15px;
-    width: 15px;
+    height: 35px;
+    width: 35px;
     font-family:'roboto_slab', serif;
-    font-size: 10px;
     background: #8d8d8d;
     border: 0;
-    color: #fff;
-    line-height: 15px;
     top: 35%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
 }
 .button_left{
      z-index: 90;
@@ -266,26 +266,27 @@ main{
     background: #c0301c;
 }
 .about_us_photo{
-    display:inline-block;
+    display: flex;
     text-align: left;
     margin-top: 40px;
     margin-bottom: 50px;
-    white-space: nowrap;
+    font-size: 0;
 }
 .about_us_photo li{
     margin-right: 2%;
     font-size: 10px;
-    width: 23.5%;
-    flex-grow: 0;/*???????*/
+    flex: 0 0 32%;
     text-align: center;
-    display: inline-block;
 }
 .about_us_photo li:last-child{
     margin-right: 0;
 }
-.about_us_photo span{
+.avatar_about {
+    font-size: 14px;
+}
+.avatar_about span{
     font-family:'roboto_slab', serif;
-    font-size: 9px;
+    font-size: 12px;
     display: block;
 }
 .avatar_wrapper{
@@ -785,21 +786,14 @@ main{
     .about_us_list{
         font-size: 12px;
     }
-    .button_left, 
-    .button_right{ 
-        height: 25px;
-        width: 25px;
-        font-size: 14px;
-        line-height: 25px;
-    }
     .media_contacts {
         bottom: 25px;
     }
     .about_us_photo li{
         font-size: 12px;
     }
-    .about_us_photo span{
-        font-size: 10px;
+    .avatar_about span{
+        font-size: 12px;
     }
     /*-------------latest_works----*/
     .latest_works_menu a{
@@ -987,9 +981,9 @@ main{
     .about_us_photo li{
         font-size: 14px;
     }
-    .about_us_photo span{
+   /* .avatar_about span{
         font-size: 13px;
-    }
+    }*/
      /*-------------latest_works----------*/
     
     .latest_works_title h2{
